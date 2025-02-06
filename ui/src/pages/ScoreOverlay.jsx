@@ -3,7 +3,7 @@ import LeftPlayer from '../components/LeftPlayer.jsx';
 import RightPlayer from "../components/RightPlayer.jsx";
 import ScoreBoard from "../components/ScoreBoard.jsx";
 
-const Score = () => {
+const ScoreOverlay = () => {
     return (
        <div className={'top'}>
            <LeftPlayer name={'Some other random guy'} faction={'Cabal'} crisis={'Alien Ship Crashes'} threat={18} color={'red'}></LeftPlayer>
@@ -17,4 +17,4 @@ const Score = () => {
 };
 
 
-export default Score;
+export default ScoreOverlay;

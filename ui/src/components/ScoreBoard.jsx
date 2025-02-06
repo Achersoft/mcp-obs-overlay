@@ -6,9 +6,9 @@ const ScoreBoard = ({ leftPlayer, leftPlayerColor, rightPlayer }) => {
         return (
             <div style={{background: 'rgba(215,215,215,.9)', width: '10%', lineHeight: 1, display: "flex", justifyContent: "center", placeItems:"center"}}>
                 <div className="row" style={{textAlign:"right", fontWeight: "bold", textTransform: "uppercase", fontSize:"xx-large"}}>
-                    <span>{leftPlayer} </span>
+                    <span style={{color:"rgb(1,168,223)"}}>{leftPlayer} </span>
                     <span style={{color:"darkslategray"}}>VP </span>
-                    <span>{rightPlayer} </span>
+                    <span style={{color:"rgba(255,0,0)", paddingLeft:"1px"}}>{rightPlayer} </span>
                 </div>
             </div>
         );
