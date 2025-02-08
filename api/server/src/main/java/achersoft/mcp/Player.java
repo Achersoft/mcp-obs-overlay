@@ -9,7 +9,8 @@ public class Player {
 
     private String name;
     private String affiliation;
-    private Crisis crisis;
+    private String crisis;
+    private String color;
     private int victoryPoints;
 
 }

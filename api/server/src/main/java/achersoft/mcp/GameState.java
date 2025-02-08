@@ -10,5 +10,6 @@ public class GameState {
     private Player playerOne;
     private Player playerTwo;
     private int round;
+    private int threat;
 
 }
