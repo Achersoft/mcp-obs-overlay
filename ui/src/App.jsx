@@ -6,18 +6,19 @@ import NextRound from "./pages/NextRound.jsx";
 import AppOld from "./pages/AppOld.jsx";
 import ScoreOverlay from "./pages/ScoreOverlay.jsx";
 import PlayerScore from "./pages/PlayerScore.jsx";
-
+import PlayerDetails from "./pages/PlayerDetails.jsx";
 
 function App() {
 
   return (
-      <BrowserRouter>
+      <Router>
           <Routes>
               <Route path="score" element={<ScoreOverlay />} />
+              <Route path="config" element={<PlayerDetails />} />
               <Route path="board" element={<PlayerScore />} />
               <Route path="*" element={<AppOld />} />
           </Routes>
-      </BrowserRouter>
+      </Router>
   )
 }
 
