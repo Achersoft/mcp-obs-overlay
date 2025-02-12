@@ -5,14 +5,20 @@ const newJsonObject = {
         name: null,
         affiliation: null,
         color: null,
-        crisis: null,
+        crisis: {
+            name: null,
+            color: "GREY"
+        },
         victoryPoints: 0
     },
     playerTwo: {
         name: null,
         affiliation: null,
         color: null,
-        crisis: null,
+        crisis: {
+            name: null,
+            color: "GREY"
+        },
         victoryPoints: 0
     },
     threat: 0,

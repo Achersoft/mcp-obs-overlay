@@ -7,9 +7,9 @@ import lombok.Data;
 @Builder
 public class Player {
 
-    private @Builder.Default String name = "Player";
-    private @Builder.Default Affiliation affiliation = Affiliation.UNAFFILIATED;
-    private @Builder.Default String crisis = "";
+    private @Builder.Default String name = null;
+    private @Builder.Default String affiliation = null;
+    private @Builder.Default Crisis crisis = Crisis.builder().build();
     private @Builder.Default Color color = Color.GREY;
     private @Builder.Default int victoryPoints = 0;
 

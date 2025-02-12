@@ -10,45 +10,11 @@ public class GameStateService {
     private GameState gameState;
 
     public GameStateService() {
-        this.gameState = GameState.builder()
-                .playerOne(Player.builder()
-                        .name("Jon Doyon")
-                        .affiliation(Affiliation.SHIELD)
-                        .crisis("Daemons Downtown")
-                        .victoryPoints(0)
-                        .color(Color.BLUE)
-                        .build())
-                .playerTwo(Player.builder()
-                        .name("Gary McGlauflin")
-                        .affiliation(Affiliation.BLACK_ORDER)
-                        .crisis("Gamma Shelter")
-                        .victoryPoints(0)
-                        .color(Color.RED)
-                        .build())
-                .round(1)
-                .threat(19)
-                .build();
+        this.gameState = GameState.builder().build();
     }
 
     public GameState reset() {
-        this.setGameState(GameState.builder()
-                .playerOne(Player.builder()
-                        .name("Jon Doyon")
-                        .affiliation(Affiliation.SHIELD)
-                        .crisis("Daemons Downtown")
-                        .victoryPoints(0)
-                        .color(Color.BLUE)
-                        .build())
-                .playerTwo(Player.builder()
-                        .name("Gary McGlauflin")
-                        .affiliation(Affiliation.BLACK_ORDER)
-                        .crisis("Gamma Shelter")
-                        .victoryPoints(0)
-                        .color(Color.RED)
-                        .build())
-                .round(1)
-                .threat(19)
-                .build());
+        this.setGameState(GameState.builder().build());
         return gameState;
     }
 
@@ -78,12 +44,13 @@ public class GameStateService {
         return gameState;
     }
 
-    public GameState setPlayerOneCrisis(String playerOneCrisis) {
+    public GameState setPlayerOneCrisis(Crisis playerOneCrisis) {
         this.getGameState().getPlayerOne().setCrisis(playerOneCrisis);
+        this.getGameState().getPlayerOne().setColor(playerOneCrisis.getColor());
         return gameState;
     }
 
-    public GameState setPlayerOneAffiliation(Affiliation playerOneAffiliation) {
+    public GameState setPlayerOneAffiliation(String playerOneAffiliation) {
         this.getGameState().getPlayerOne().setAffiliation(playerOneAffiliation);
         return gameState;
     }
@@ -104,12 +71,13 @@ public class GameStateService {
         return gameState;
     }
 
-    public GameState setPlayerTwoCrisis(String playerTwoCrisis) {
+    public GameState setPlayerTwoCrisis(Crisis playerTwoCrisis) {
         this.getGameState().getPlayerTwo().setCrisis(playerTwoCrisis);
+        this.getGameState().getPlayerTwo().setColor(playerTwoCrisis.getColor());
         return gameState;
     }
 
-    public GameState setPlayerTwoAffiliation(Affiliation playerTwoAffiliation) {
+    public GameState setPlayerTwoAffiliation(String playerTwoAffiliation) {
         this.getGameState().getPlayerTwo().setAffiliation(playerTwoAffiliation);
         return gameState;
     }

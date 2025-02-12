@@ -7,12 +7,12 @@ const PlayerBoard = ({ player }) => {
 
     if (player === 'ONE') {
         function handleOneUp() {
-            fetch('http://localhost:8080/update/one/score/up', {
+            fetch('/update/one/score/up', {
                 method: 'POST'
             });
         }
         function handleOneDown() {
-            fetch('http://localhost:8080/update/one/score/down', {
+            fetch('/update/one/score/down', {
                 method: 'POST'
             });
         }
@@ -31,7 +31,7 @@ const PlayerBoard = ({ player }) => {
                     {gameState.playerOne.name}
                 </div>
                 <div style={{fontWeight: "bold", fontSize: "x-large", marginTop: '20px'}}>
-                    {gameState.playerOne.crisis}
+                    {gameState.playerOne.crisis.name}
                 </div>
                 <div style={{marginTop: '25px'}}>
                     <button style={{
@@ -74,12 +74,12 @@ const PlayerBoard = ({ player }) => {
         );
     } else {
         function handleTwoUp() {
-            fetch('http://localhost:8080/update/two/score/up', {
+            fetch('/update/two/score/up', {
                 method: 'POST'
             });
         }
         function handleTwoDown() {
-            fetch('http://localhost:8080/update/two/score/down', {
+            fetch('/update/two/score/down', {
                 method: 'POST'
             });
         }
@@ -89,7 +89,7 @@ const PlayerBoard = ({ player }) => {
                     {gameState.playerTwo.name}
                 </div>
                 <div style={{fontWeight: "bold", fontSize: "x-large", marginTop: '20px'}}>
-                    {gameState.playerTwo.crisis}
+                    {gameState.playerTwo.crisis.name}
                 </div>
                 <div style={{marginTop: '25px'}}>
                     <button style={{

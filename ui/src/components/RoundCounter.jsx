@@ -8,19 +8,19 @@ const RoundCounter = () => {
     const gameState  = React.useContext(GameStateContext);
 
     function handleLeft() {
-        fetch('http://localhost:8080/update/round/down', {
+        fetch('/update/round/down', {
             method: 'POST'
         });
     }
 
     function handleRight() {
-        fetch('http://localhost:8080/update/round/up', {
+        fetch('/update/round/up', {
             method: 'POST'
         });
     }
 
     function handlePlayerReverse() {
-        fetch('http://localhost:8080/update/player/reverse', {
+        fetch('/update/player/reverse', {
             method: 'POST'
         });
     }

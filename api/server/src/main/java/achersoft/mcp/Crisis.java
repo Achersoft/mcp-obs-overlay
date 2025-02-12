@@ -1,16 +1,11 @@
 package achersoft.mcp;
 
-public enum Crisis {
+import lombok.Builder;
+import lombok.Data;
 
-    RESEARCH_STATION_ATTACKED("Research Station Attacked!", Color.RED, 15);
-
-    private String name;
-    private Color color;
-    private int threatLevel;
-
-    Crisis(String name, Color color, int threatLevel) {
-        this.name = name;
-        this.color = color;
-        this.threatLevel = threatLevel;
-    }
+@Data
+@Builder
+public class Crisis {
+    private @Builder.Default String name = null;
+    private @Builder.Default Color color = null;
 }

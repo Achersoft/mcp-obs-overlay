@@ -3,6 +3,7 @@ package achersoft.mcp;
 import lombok.AllArgsConstructor;
 import org.springframework.messaging.simp.SimpMessagingTemplate;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -30,22 +31,22 @@ public class UpdateController {
         }
 
         @PostMapping("/threat")
-        public void setThreat(int threat) {
+        public void setThreat(@RequestBody int threat) {
                 messagingTemplate.convertAndSend("/topic/public", gameStateService.setThreat(threat));
         }
 
         @PostMapping("/one/name")
-        public void oneName(String name) {
+        public void oneName(@RequestBody String name) {
                 messagingTemplate.convertAndSend("/topic/public", gameStateService.setPlayerOneName(name));
         }
 
         @PostMapping("/one/affiliation")
-        public void oneAffiliation(Affiliation affiliation) {
+        public void oneAffiliation(@RequestBody String affiliation) {
                 messagingTemplate.convertAndSend("/topic/public", gameStateService.setPlayerOneAffiliation(affiliation));
         }
 
         @PostMapping("/one/crisis")
-        public void oneCrisis(String crisis) {
+        public void oneCrisis(@RequestBody Crisis crisis) {
                 messagingTemplate.convertAndSend("/topic/public", gameStateService.setPlayerOneCrisis(crisis));
         }
 
@@ -60,17 +61,17 @@ public class UpdateController {
         }
 
         @PostMapping("/two/name")
-        public void twoName(String name) {
+        public void twoName(@RequestBody String name) {
                 messagingTemplate.convertAndSend("/topic/public", gameStateService.setPlayerTwoName(name));
         }
 
         @PostMapping("/two/affiliation")
-        public void twoAffiliation(Affiliation affiliation) {
+        public void twoAffiliation(@RequestBody String affiliation) {
                 messagingTemplate.convertAndSend("/topic/public", gameStateService.setPlayerTwoAffiliation(affiliation));
         }
 
         @PostMapping("/two/crisis")
-        public void twoCrisis(String crisis) {
+        public void twoCrisis(@RequestBody Crisis crisis) {
                 messagingTemplate.convertAndSend("/topic/public", gameStateService.setPlayerTwoCrisis(crisis));
         }
 

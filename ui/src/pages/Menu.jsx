@@ -5,7 +5,7 @@ const MenuPage = () => {
 
     function confirmReset() {
         if(window.confirm("Are you sure wou wish to reset the Game State?")) {
-            fetch('http://localhost:8080/config/reset', {
+            fetch('/config/reset', {
                 method: 'GET'
             });
         }

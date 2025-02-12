@@ -8,14 +8,20 @@ const GameStateProvider = ({ children }) => {
             name: null,
             affiliation: null,
             color: null,
-            crisis: null,
+            crisis: {
+                name: null,
+                color: "GREY"
+            },
             victoryPoints: 0
         },
         playerTwo: {
             name: null,
             affiliation: null,
             color: null,
-            crisis: null,
+            crisis: {
+                name: null,
+                color: "GREY"
+            },
             victoryPoints: 0
         },
         threat: 0,
@@ -25,7 +31,7 @@ const GameStateProvider = ({ children }) => {
     });
 
     useEffect(() => {
-        fetch('http://localhost:8080/config/state')
+        fetch('/config/state')
             .then(response => response.json())
             .then(responseData => {
                 setGameState(responseData);
@@ -38,7 +44,7 @@ const GameStateProvider = ({ children }) => {
 
     useEffect(() => {
         const client = new Client({
-            brokerURL: 'ws://localhost:8080/ws',//'ws://' + window.location.host + '/ws',
+            brokerURL: 'ws://' + window.location.host + '/ws',
             reconnectDelay: 5000,
             onConnect: () => {
                 console.log('Connected to WebSocket');
