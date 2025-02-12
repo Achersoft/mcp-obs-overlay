@@ -7,10 +7,10 @@ import lombok.Data;
 @Builder
 public class Player {
 
-    private String name;
-    private String affiliation;
-    private String crisis;
-    private String color;
-    private int victoryPoints;
+    private @Builder.Default String name = "Player";
+    private @Builder.Default Affiliation affiliation = Affiliation.UNAFFILIATED;
+    private @Builder.Default String crisis = "";
+    private @Builder.Default Color color = Color.GREY;
+    private @Builder.Default int victoryPoints = 0;
 
 }

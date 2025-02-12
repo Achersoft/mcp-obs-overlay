@@ -13,25 +13,52 @@ public class GameStateService {
         this.gameState = GameState.builder()
                 .playerOne(Player.builder()
                         .name("Jon Doyon")
-                        .affiliation("Shield")
+                        .affiliation(Affiliation.SHIELD)
                         .crisis("Daemons Downtown")
                         .victoryPoints(0)
-                        .color("BLUE")
+                        .color(Color.BLUE)
                         .build())
                 .playerTwo(Player.builder()
                         .name("Gary McGlauflin")
-                        .affiliation("Black Order")
+                        .affiliation(Affiliation.BLACK_ORDER)
                         .crisis("Gamma Shelter")
                         .victoryPoints(0)
-                        .color("RED")
+                        .color(Color.RED)
                         .build())
                 .round(1)
                 .threat(19)
                 .build();
     }
 
+    public GameState reset() {
+        this.setGameState(GameState.builder()
+                .playerOne(Player.builder()
+                        .name("Jon Doyon")
+                        .affiliation(Affiliation.SHIELD)
+                        .crisis("Daemons Downtown")
+                        .victoryPoints(0)
+                        .color(Color.BLUE)
+                        .build())
+                .playerTwo(Player.builder()
+                        .name("Gary McGlauflin")
+                        .affiliation(Affiliation.BLACK_ORDER)
+                        .crisis("Gamma Shelter")
+                        .victoryPoints(0)
+                        .color(Color.RED)
+                        .build())
+                .round(1)
+                .threat(19)
+                .build());
+        return gameState;
+    }
+
     public GameState setThreat(int threat) {
         this.getGameState().setThreat(threat);
+        return gameState;
+    }
+
+    public GameState playerReverse() {
+        this.getGameState().setPlayerReversed(!this.getGameState().isPlayerReversed());
         return gameState;
     }
 
@@ -56,7 +83,7 @@ public class GameStateService {
         return gameState;
     }
 
-    public GameState setPlayerOneAffiliation(String playerOneAffiliation) {
+    public GameState setPlayerOneAffiliation(Affiliation playerOneAffiliation) {
         this.getGameState().getPlayerOne().setAffiliation(playerOneAffiliation);
         return gameState;
     }
@@ -82,7 +109,7 @@ public class GameStateService {
         return gameState;
     }
 
-    public GameState setPlayerTwoAffiliation(String playerTwoAffiliation) {
+    public GameState setPlayerTwoAffiliation(Affiliation playerTwoAffiliation) {
         this.getGameState().getPlayerTwo().setAffiliation(playerTwoAffiliation);
         return gameState;
     }

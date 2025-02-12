@@ -12,7 +12,12 @@ import org.springframework.web.bind.annotation.RestController;
 public class UpdateController {
 
         private final SimpMessagingTemplate messagingTemplate;
-        private GameStateService gameStateService;
+        private final GameStateService gameStateService;
+
+        @PostMapping("/player/reverse")
+        public void playerReverse() {
+                messagingTemplate.convertAndSend("/topic/public", gameStateService.playerReverse());
+        }
 
         @PostMapping("/round/up")
         public void roundUp() {
@@ -35,7 +40,7 @@ public class UpdateController {
         }
 
         @PostMapping("/one/affiliation")
-        public void oneAffiliation(String affiliation) {
+        public void oneAffiliation(Affiliation affiliation) {
                 messagingTemplate.convertAndSend("/topic/public", gameStateService.setPlayerOneAffiliation(affiliation));
         }
 
@@ -60,7 +65,7 @@ public class UpdateController {
         }
 
         @PostMapping("/two/affiliation")
-        public void twoAffiliation(String affiliation) {
+        public void twoAffiliation(Affiliation affiliation) {
                 messagingTemplate.convertAndSend("/topic/public", gameStateService.setPlayerTwoAffiliation(affiliation));
         }
 

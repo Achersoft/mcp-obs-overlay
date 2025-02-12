@@ -6,7 +6,7 @@ import PlayerConfig from "../components/PlayerConfig.jsx";
 const PlayerScore = () => {
     return (
        <div className={'fullscreen'} style={{background: 'rgb(85, 85, 85)'}}>
-           <PlayerConfig name={"bob"}/>
+           <PlayerConfig/>
        </div>
     );
 };

@@ -19,7 +19,9 @@ const GameStateProvider = ({ children }) => {
             victoryPoints: 0
         },
         threat: 0,
-        round: 1
+        round: 1,
+        playerReversed: false,
+        overlayReversed: false
     });
 
     useEffect(() => {

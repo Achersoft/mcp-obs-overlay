@@ -13,12 +13,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class ConfigController {
 
         private final SimpMessagingTemplate messagingTemplate;
-        private GameStateService gameStateService;
+        private final GameStateService gameStateService;
 
         @GetMapping("/reset")
         public void reset() {
-
-                messagingTemplate.convertAndSend("/topic/public", gameStateService.getGameState());
+                messagingTemplate.convertAndSend("/topic/public", gameStateService.reset());
         }
 
         @GetMapping("/state")
