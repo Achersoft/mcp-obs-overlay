@@ -8,16 +8,18 @@ const GameStateProvider = ({ children }) => {
             name: null,
             affiliation: null,
             color: null,
-            crisis: null
+            crisis: null,
+            victoryPoints: 0
         },
         playerTwo: {
             name: null,
             affiliation: null,
             color: null,
-            crisis: null
+            crisis: null,
+            victoryPoints: 0
         },
         threat: 0,
-        round: 0
+        round: 1
     });
 
     useEffect(() => {

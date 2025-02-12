@@ -6,10 +6,15 @@ const RoundCounter = () => {
     const gameState  = React.useContext(GameStateContext);
 
     function handleLeft() {
+        fetch('http://localhost:8080/update/round/down', {
+            method: 'POST'
+        });
+    }
+
+    function handleRight() {
         fetch('http://localhost:8080/update/round/up', {
             method: 'POST'
         });
-        console.log('You clicked submit.');
     }
 
     return (
@@ -30,7 +35,7 @@ const RoundCounter = () => {
                     width: "50px",
                     height: "50px",
 
-                }}>
+                }} onClick={handleRight}>
                     <i className="fa fa-solid fa-angle-right" style={{fontSize: "35px"}}></i>
                 </button>
             </div>

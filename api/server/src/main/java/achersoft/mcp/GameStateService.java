@@ -15,13 +15,15 @@ public class GameStateService {
                         .name("Jon Doyon")
                         .affiliation("Shield")
                         .crisis("Daemons Downtown")
-                        .victoryPoints(2)
+                        .victoryPoints(0)
+                        .color("BLUE")
                         .build())
                 .playerTwo(Player.builder()
                         .name("Gary McGlauflin")
                         .affiliation("Black Order")
                         .crisis("Gamma Shelter")
                         .victoryPoints(0)
+                        .color("RED")
                         .build())
                 .round(1)
                 .threat(19)
@@ -39,7 +41,7 @@ public class GameStateService {
     }
 
     public GameState decrementRound() {
-        if (this.getGameState().getRound() > 0)
+        if (this.getGameState().getRound() > 1)
             this.getGameState().setRound(this.getGameState().getRound() - 1);
         return gameState;
     }

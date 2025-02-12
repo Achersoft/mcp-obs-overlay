@@ -1,31 +1,34 @@
 import React from 'react';
+import GameStateContext from "../GameStateContext.jsx";
 
-const LeftPlayer = ({ name, faction, crisis, threat, color }) => {
-    if (color === 'blue') {
+const LeftPlayer = () => {
+    const gameState  = React.useContext(GameStateContext);
+
+    if (gameState.playerOne.color === 'BLUE') {
         return (
             <div style={{background: 'linear-gradient(to right, rgba(0,200,255,0.5), rgba(0,200,255,.9))', width: '35%', clipPath: 'polygon(0px 0px, 100% 0%, 100% 100%, 15% 100%)', paddingRight: '10px', lineHeight: 1}}>
                 <div className="row" style={{textAlign:"right", fontWeight: "bolder", textTransform: "uppercase", fontSize:"x-large"}}>
-                    {faction}
+                    {gameState.playerOne.affiliation}
                 </div>
                 <div className="row" style={{textAlign:"right", fontStyle: "italic", fontSize: "smaller", paddingBottom: '2px', paddingTop: '2px'}}>
-                    {crisis} ({threat})
+                    {gameState.playerOne.crisis} ({gameState.threat})
                 </div>
                 <div className="row" style={{textAlign:"right", fontWeight: "bold", paddingBottom: '6px'}}>
-                    {name}
+                    {gameState.playerOne.name}
                 </div>
             </div>
         );
-    } else if (color === 'red') {
+    } else if (gameState.playerOne.color === 'RED') {
         return (
             <div style={{background: 'linear-gradient(to right, rgba(255,0,0,0.5), rgba(255,0,0,.9))', width: '35%', clipPath: 'polygon(0px 0px, 100% 0%, 100% 100%, 15% 100%)', paddingRight: '10px', lineHeight: 1}}>
                 <div className="row" style={{textAlign:"right", fontWeight: "bolder", textTransform: "uppercase", fontSize:"x-large"}}>
-                    {faction}
+                    {gameState.playerOne.affiliation}
                 </div>
                 <div className="row" style={{textAlign:"right", fontStyle: "italic", fontSize: "smaller", paddingBottom: '2px', paddingTop: '2px'}}>
-                    {crisis} ({threat})
+                    {gameState.playerOne.crisis} ({gameState.threat})
                 </div>
                 <div className="row" style={{textAlign:"right", fontWeight: "bold", paddingBottom: '6px'}}>
-                    {name}
+                    {gameState.playerOne.name}
                 </div>
             </div>
         );
@@ -33,19 +36,17 @@ const LeftPlayer = ({ name, faction, crisis, threat, color }) => {
         return (
             <div style={{background: 'linear-gradient(to right, rgba(165,165,165,0.5), rgba(135,135,135,.9))', width: '35%', clipPath: 'polygon(0px 0px, 100% 0%, 100% 100%, 15% 100%)', paddingRight: '10px', lineHeight: 1}}>
                 <div className="row" style={{textAlign:"right", fontWeight: "bolder", textTransform: "uppercase", fontSize:"x-large"}}>
-                    {faction}
+                    {gameState.playerOne.affiliation}
                 </div>
                 <div className="row" style={{textAlign:"right", fontStyle: "italic", fontSize: "smaller", paddingBottom: '2px', paddingTop: '2px'}}>
-                    {crisis} ({threat})
+                    {gameState.playerOne.crisis} ({gameState.threat})
                 </div>
                 <div className="row" style={{textAlign:"right", fontWeight: "bold", paddingBottom: '6px'}}>
-                    {name}
+                    {gameState.playerOne.name}
                 </div>
             </div>
         );
     }
-
-
 };
 
 export default LeftPlayer;
