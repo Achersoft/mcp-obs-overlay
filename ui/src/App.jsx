@@ -7,6 +7,7 @@ import AppOld from "./pages/AppOld.jsx";
 import ScoreOverlay from "./pages/ScoreOverlay.jsx";
 import PlayerScore from "./pages/PlayerScore.jsx";
 import PlayerDetails from "./pages/PlayerDetails.jsx";
+import Menu from "./pages/Menu.jsx";
 
 function App() {
 
@@ -16,7 +17,7 @@ function App() {
               <Route path="score" element={<ScoreOverlay />} />
               <Route path="config" element={<PlayerDetails />} />
               <Route path="board" element={<PlayerScore />} />
-              <Route path="*" element={<AppOld />} />
+              <Route path="*" element={<Menu />} />
           </Routes>
       </Router>
   )
