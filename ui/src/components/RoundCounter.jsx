@@ -35,25 +35,27 @@ const RoundCounter = () => {
                 </div>
             </div>
             <div style={{display:"flex", width:"40%", justifyContent:"center"}}>
-                <div>
-                    <button style={{
-                        width: "50px",
-                        height: "50px",
-                    }} onClick={handleLeft}>
-                        <i className="fa fa-solid fa-angle-left" style={{fontSize: "35px"}}></i>
-                    </button>
+                <div style={{
+                    width: "50px",
+                    height: "50px",
+                    background: 'rgb(243,234,234)',
+                    borderRadius: "10px",
+                    alignContent: "center"
+                }} onClick={handleLeft}>
+                    <i className="fa fa-solid fa-angle-left" style={{fontSize: "35px", color:"black"}}></i>
                 </div>
                 <div style={{fontWeight: "bolder", fontSize:"xxx-large",marginLeft:"20px"}}>
                     Round: {gameState.round}
                 </div>
-                <div style={{marginLeft:"20px"}}>
-                    <button style={{
-                        width: "50px",
-                        height: "50px",
-
-                    }} onClick={handleRight}>
-                        <i className="fa fa-solid fa-angle-right" style={{fontSize: "35px"}}></i>
-                    </button>
+                <div style={{
+                    marginLeft:"20px",
+                    width: "50px",
+                    height: "50px",
+                    background: 'rgb(243,234,234)',
+                    borderRadius: "10px",
+                    alignContent: "center"
+                }} onClick={handleRight}>
+                    <i className="fa fa-solid fa-angle-right" style={{fontSize: "35px", color:"black"}}></i>
                 </div>
             </div>
             <div style={{display:"flex", width:"30%", justifyContent:"right"}}>
@@ -63,7 +65,6 @@ const RoundCounter = () => {
                     </Button>
                 </div>
             </div>
-
         </div>
     );
 };
