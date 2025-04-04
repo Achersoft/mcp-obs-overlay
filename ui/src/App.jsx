@@ -5,6 +5,8 @@ import PlayerScore from "./pages/PlayerScore.jsx";
 import PlayerDetails from "./pages/PlayerDetails.jsx";
 import Menu from "./pages/Menu.jsx";
 import PlayerOneCharacters from "./pages/PlayerOneCharacters.jsx";
+import LeftPlayerSimple from "./pages/LeftPlayerSimple.jsx"
+import RightPlayerSimple from "./pages/RightPlayerSimple.jsx"
 
 function App() {
 
@@ -13,6 +15,8 @@ function App() {
           <Routes>
               <Route path="one" element={<PlayerOneCharacters />} />
               <Route path="score" element={<ScoreOverlay />} />
+              <Route path="leftSimple" element={<LeftPlayerSimple />} />
+              <Route path="rightSimple" element={<RightPlayerSimple />} />
               <Route path="config" element={<PlayerDetails />} />
               <Route path="board" element={<PlayerScore />} />
               <Route path="*" element={<Menu />} />

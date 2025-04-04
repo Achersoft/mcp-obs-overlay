@@ -55,6 +55,22 @@ h1 {
   width: 100vw;
 }
 
+.left {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  width: 100vw;
+  height: 100vh;
+}
+
+.right {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  width: 100vw;
+  height: 100vh;
+}
+
 .fullscreen {
   margin: 0;
   display: flex;
