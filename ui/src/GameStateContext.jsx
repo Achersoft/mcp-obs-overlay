@@ -24,7 +24,10 @@ const newJsonObject = {
     threat: 0,
     round: 1,
     playerReversed: false,
-    overlayReversed: false
+    overlayReversed: false,
+    characterWidth: 0,
+    gruntPadding: 0,
+    playerOneCharacters: null
 };
 
 const GameStateContext = React.createContext(newJsonObject);
