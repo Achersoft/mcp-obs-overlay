@@ -26,6 +26,7 @@ const newJsonObject = {
     playerReversed: false,
     overlayReversed: false,
     characterWidth: 0,
+    characterOffset: 0,
     gruntPadding: 0,
     playerOneCharacters: null
 };

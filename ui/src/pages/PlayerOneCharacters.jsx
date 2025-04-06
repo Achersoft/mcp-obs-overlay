@@ -5,7 +5,7 @@ const PlayerOneCharacters = () => {
     return (
         <div>
             <div className={'left'}>
-               <LeftPlayerCharacters></LeftPlayerCharacters>
+               <LeftPlayerCharacters showScore="true"></LeftPlayerCharacters>
             </div>
         </div>
     );

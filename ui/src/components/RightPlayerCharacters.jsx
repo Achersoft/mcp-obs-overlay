@@ -1,42 +1,42 @@
 import React from 'react';
 import GameStateContext from "../GameStateContext.jsx";
-import LeftPlayerCharacter from "./LeftPlayerCharacter.jsx";
+import RightPlayerCharacter from "./RightPlayerCharacter.jsx";
 
-const LeftPlayerCharacters = ({showScore}) => {
+const RightPlayerCharacters = ({showScore}) => {
     const gameState = React.useContext(GameStateContext);
     var backgroundState = 'linear-gradient(to top, rgba(165,165,165,0.5), rgba(135,135,135,.9))';
 
-    if (gameState.playerOne.color === 'BLUE') {
+    if (gameState.playerTwo.color === 'BLUE') {
         backgroundState = 'linear-gradient(to top, rgba(0,125,255,0.5), rgba(0,125,255,.9))';
-    } else if (gameState.playerOne.color === 'RED') {
+    } else if (gameState.playerTwo.color === 'RED') {
         backgroundState = 'linear-gradient(to top, rgba(255,0,0,0.5), rgba(255,0,0,.9))';
     }
 
     if (gameState.playerOneCharacters !== null) {
         if (showScore) {
             return (
-                <div style={{background: `${backgroundState}`, width: `${gameState.characterWidth}px`, paddingRight: '10px', lineHeight: 1}}>
+                <div style={{background: `${backgroundState}`, width: `${gameState.characterWidth}px`, paddingLeft: '10px', lineHeight: 1}}>
                     <div style={{height: `${gameState.characterOffset}px`}}>
                         <div style={{textAlign:"center", fontWeight: "bolder", textTransform: "uppercase", fontSize: "2.3vw" }}>
-                            {gameState.playerOne.affiliation}
+                            {gameState.playerTwo.affiliation}
                         </div>
                         <div style={{textAlign:"center", fontWeight: "bold", fontSize: "1.8vw", marginTop: "7px"}}>
-                            {gameState.playerOne.name}
+                            {gameState.playerTwo.name}
                         </div>
                         <div style={{textAlign:"center", fontStyle: "italic", fontSize: "1.8vw", marginTop: "7px"}}>
-                            {gameState.playerOne.crisis.name}-({gameState.threat})
+                            {gameState.playerTwo.crisis.name}-({gameState.threat})
                         </div>
                     </div>
                     {gameState.playerOneCharacters.map((character) => (
-                        <LeftPlayerCharacter key={character.name} boxWidth={gameState.characterWidth} gruntPadding={gameState.gruntPadding} character={character}></LeftPlayerCharacter>
+                        <RightPlayerCharacter key={character.name} boxWidth={gameState.characterWidth} gruntPadding={gameState.gruntPadding} character={character}></RightPlayerCharacter>
                     ))}
                 </div>
             );
         } else {
             return (
                 <div>
-                    {gameState.playerOneCharacters.map((character) => (
-                        <LeftPlayerCharacter key={character.name} boxWidth={gameState.characterWidth} gruntPadding={gameState.gruntPadding} character={character}></LeftPlayerCharacter>
+                    {gameState.playerTwoCharacters.map((character) => (
+                        <RightPlayerCharacter key={character.name} boxWidth={gameState.characterWidth} gruntPadding={gameState.gruntPadding} character={character}></RightPlayerCharacter>
                     ))}
                 </div>
             );
@@ -46,4 +46,4 @@ const LeftPlayerCharacters = ({showScore}) => {
     }
 };
 
-export default LeftPlayerCharacters;
+export default RightPlayerCharacters;

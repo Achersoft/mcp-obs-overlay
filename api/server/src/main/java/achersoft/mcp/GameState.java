@@ -18,6 +18,7 @@ public class GameState {
     private @Builder.Default boolean playerReversed = false;
     private @Builder.Default boolean overlayReversed = false;
     private @Builder.Default int characterWidth = 200;
+    private @Builder.Default int characterOffset = 150;
     private @Builder.Default int gruntPadding = 50;
     private @Builder.Default List<Character> playerTwoCharacters = new ArrayList<>();
     private @Builder.Default List<Character> playerOneCharacters =

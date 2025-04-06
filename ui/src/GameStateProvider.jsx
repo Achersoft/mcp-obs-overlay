@@ -29,6 +29,7 @@ const GameStateProvider = ({ children }) => {
         playerReversed: false,
         overlayReversed: false,
         characterWidth: 0,
+        characterOffset: 0,
         gruntPadding: 0,
         playerOneCharacters: null
     });
