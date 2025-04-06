@@ -93,4 +93,18 @@ public class GameStateService {
         return gameState;
     }
 
+    public GameState setCharacterWidth(int characterWidth) {
+        this.getGameState().setCharacterWidth(characterWidth);
+        return gameState;
+    }
+
+    public GameState setCharacterOffset(int characterOffset) {
+        this.getGameState().setCharacterOffset(characterOffset);
+        return gameState;
+    }
+
+    public GameState setGruntPadding(int gruntPadding) {
+        this.getGameState().setGruntPadding(gruntPadding);
+        return gameState;
+    }
 }

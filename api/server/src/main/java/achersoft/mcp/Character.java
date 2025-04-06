@@ -3,9 +3,12 @@ package achersoft.mcp;
 import lombok.Builder;
 import lombok.Data;
 
+import java.util.UUID;
+
 @Data
 @Builder
 public class Character {
+    private @Builder.Default String id = UUID.randomUUID().toString();
     private @Builder.Default String name = "";
     private @Builder.Default String image = "tag-clean.png";
     private @Builder.Default String normalImage = "tag-clean.png";

@@ -20,8 +20,9 @@ public class GameState {
     private @Builder.Default int characterWidth = 200;
     private @Builder.Default int characterOffset = 150;
     private @Builder.Default int gruntPadding = 50;
+    private @Builder.Default List<Character> playerOneCharacters = new ArrayList<>();
     private @Builder.Default List<Character> playerTwoCharacters = new ArrayList<>();
-    private @Builder.Default List<Character> playerOneCharacters =
+   /* private @Builder.Default List<Character> playerOneCharacters =
             Arrays.asList(Character.builder()
                             .name("Red Skull 2")
                     .maxHealth(7)
@@ -41,5 +42,5 @@ public class GameState {
                             .name("Namor3").hasExtract(true).build(),
                     Character.builder()
                             .name("Namor4").activated(true).dazed(true).build()
-                    );
+                    );*/
 }
