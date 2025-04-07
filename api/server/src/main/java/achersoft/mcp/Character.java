@@ -1,12 +1,16 @@
 package achersoft.mcp;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.UUID;
 
 @Data
-@Builder
+@Builder(toBuilder = true)
+@AllArgsConstructor
+@NoArgsConstructor
 public class Character {
     private @Builder.Default String id = UUID.randomUUID().toString();
     private @Builder.Default String name = "";
@@ -39,4 +43,5 @@ public class Character {
     private @Builder.Default int gruntsMaxHealth = 0;
     private @Builder.Default int gruntPercentHealth = 0;
     private @Builder.Default boolean gruntsHasExtract = false;
+    private @Builder.Default boolean gruntsKo = false;
 }

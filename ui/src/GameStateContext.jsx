@@ -28,7 +28,7 @@ const newJsonObject = {
     characterWidth: 0,
     characterOffset: 0,
     gruntPadding: 0,
-    playerOneCharacters: null
+    playerOneCharacters: []
 };
 
 const GameStateContext = React.createContext(newJsonObject);

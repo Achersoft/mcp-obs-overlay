@@ -31,7 +31,7 @@ const GameStateProvider = ({ children }) => {
         characterWidth: 0,
         characterOffset: 0,
         gruntPadding: 0,
-        playerOneCharacters: null
+        playerOneCharacters: []
     });
 
     useEffect(() => {

@@ -1,0 +1,16 @@
+[{
+  "id": "abomination",
+  "name": "Abomination",
+  "normalImage": "abomination-icon.png",
+  "transformImage": "abomination-icon.png",
+  "maxHealthNormal": 7,
+  "maxHealthInjured": 7,
+  "powerGain": 2
+},{
+  "id": "agent-venom",
+  "name": "Agent Venom",
+  "normalImage": "agent-venom-icon.png",
+  "transformImage": "agent-venom-icon.png",
+  "maxHealthNormal": 6,
+  "maxHealthInjured": 6
+}]

@@ -16,17 +16,17 @@ public class ScreenController {
         private final GameStateService gameStateService;
 
         @PostMapping("/character/width")
-        public void setCharacterWidth(int characterWidth) {
+        public void setCharacterWidth(@RequestBody int characterWidth) {
                 messagingTemplate.convertAndSend("/topic/public", gameStateService.setCharacterWidth(characterWidth));
         }
 
         @PostMapping("/character/offset")
-        public void setCharacterOffset(int characterOffset) {
+        public void setCharacterOffset(@RequestBody int characterOffset) {
                 messagingTemplate.convertAndSend("/topic/public", gameStateService.setCharacterOffset(characterOffset));
         }
 
         @PostMapping("/grunt/padding")
-        public void setGruntPadding(int gruntPadding) {
+        public void setGruntPadding(@RequestBody int gruntPadding) {
                 messagingTemplate.convertAndSend("/topic/public", gameStateService.setGruntPadding(gruntPadding));
         }
 }

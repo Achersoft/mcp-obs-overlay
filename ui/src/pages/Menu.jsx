@@ -24,6 +24,11 @@ const MenuPage = () => {
                </Button>
            </div>
            <div style={{width:"100%", marginTop:"75px"}}>
+              <Button size={"large"} variant="contained" href="#characterConfig">
+                  Character Config
+              </Button>
+          </div>
+           <div style={{width:"100%", marginTop:"75px"}}>
                <Button size={"large"} variant="contained" color={"error"} onClick={confirmReset}>
                    Game Reset
                </Button>

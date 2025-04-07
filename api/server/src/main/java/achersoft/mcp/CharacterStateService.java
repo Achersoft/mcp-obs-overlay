@@ -1,9 +1,10 @@
 package achersoft.mcp;
 
-import lombok.Builder;
 import org.springframework.stereotype.Component;
 
-import java.util.UUID;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 
 @Component
 public class CharacterStateService {
@@ -14,48 +15,128 @@ public class CharacterStateService {
         this.gameStateService = gameStateService;
     }
 
-    public GameState addCharacterPlayerOne(Character character) {
-        this.gameStateService.getGameState().getPlayerOneCharacters().add(character);
+    public GameState modifyCharactersPlayerOne(List<Character> characters) {
+        List<String> activeCharacters = new ArrayList<>();
+
+        if (characters != null && characters.size() > 0) {
+            activeCharacters = characters .stream().map(Character::getId).collect(Collectors.toList());
+        }
+
+        if (!this.gameStateService.getGameState().getPlayerOneCharacters().isEmpty()) {
+            final List<String> finalActiveCharacters = activeCharacters;
+            this.gameStateService.getGameState().setPlayerOneCharacters(
+                    this.gameStateService.getGameState().getPlayerOneCharacters().stream()
+                            .filter(character -> finalActiveCharacters.contains(character.getId())).collect(Collectors.toList()));
+        }
+
+        List<String> currentCharacters = new ArrayList<>();
+        if (this.gameStateService.getGameState().getPlayerOneCharacters() != null && this.gameStateService.getGameState().getPlayerOneCharacters().size() > 0) {
+            currentCharacters = this.gameStateService.getGameState().getPlayerOneCharacters().stream().map(Character::getId).collect(Collectors.toList());
+        }
+
+        final List<String> finalCurrentCharacters = currentCharacters;
+        characters.forEach(character -> {
+            if (finalCurrentCharacters.isEmpty() || !finalCurrentCharacters.contains(character.getId())) {
+                this.gameStateService.getGameState().getPlayerOneCharacters().add(character.toBuilder()
+                        .maxHealth(character.getMaxHealthNormal())
+                .image(character.getNormalImage()).build());
+            }
+        });
+
+        return this.gameStateService.getGameState();
+    }
+
+    public GameState modifyCharactersPlayerTwo(List<Character> characters) {
+        List<String> activeCharacters = new ArrayList<>();
+
+        if (characters != null && characters.size() > 0) {
+            activeCharacters = characters .stream().map(Character::getId).collect(Collectors.toList());
+        }
+
+        if (!this.gameStateService.getGameState().getPlayerTwoCharacters().isEmpty()) {
+            final List<String> finalActiveCharacters = activeCharacters;
+            this.gameStateService.getGameState().setPlayerTwoCharacters(
+                    this.gameStateService.getGameState().getPlayerTwoCharacters().stream()
+                            .filter(character -> finalActiveCharacters.contains(character.getId())).collect(Collectors.toList()));
+        }
+
+        List<String> currentCharacters = new ArrayList<>();
+        if (this.gameStateService.getGameState().getPlayerTwoCharacters() != null && this.gameStateService.getGameState().getPlayerTwoCharacters().size() > 0) {
+            currentCharacters = this.gameStateService.getGameState().getPlayerTwoCharacters().stream().map(Character::getId).collect(Collectors.toList());
+        }
+
+        final List<String> finalCurrentCharacters = currentCharacters;
+        characters.forEach(character -> {
+            if (finalCurrentCharacters.isEmpty() || !finalCurrentCharacters.contains(character.getId())) {
+                this.gameStateService.getGameState().getPlayerTwoCharacters().add(character.toBuilder()
+                        .maxHealth(character.getMaxHealthNormal())
+                        .image(character.getNormalImage()).build());
+            }
+        });
+
         return this.gameStateService.getGameState();
     }
 
     public GameState playerOneTakeDamage(String id) {
         this.gameStateService.getGameState().getPlayerOneCharacters().forEach(character -> {
             if(character.getId().equals(id)) {
+                if (character.getCurrentDamage() < character.getMaxHealth()) {
+                    character.setCurrentDamage(character.getCurrentDamage() + 1);
+                    normalize(character);
+                }
+            }
+        });
+        return this.gameStateService.getGameState();
+    }
 
+    public GameState playerOneTakeDamageGrunts(String id) {
+        this.gameStateService.getGameState().getPlayerOneCharacters().forEach(character -> {
+            if(character.getId().equals(id)) {
+                if (character.getGruntsCurrentDamage() < character.getGruntsMaxHealth()) {
+                    character.setGruntsCurrentDamage(character.getGruntsCurrentDamage() + 1);
+                    normalize(character);
+                }
             }
         });
         return this.gameStateService.getGameState();
     }
 
     public GameState cleanUpAndPower() {
-        this.gameStateService.getGameState().getPlayerOneCharacters().forEach(character -> {
-            if (character.isKo())
-                return;
+        this.gameStateService.getGameState().getPlayerOneCharacters().forEach(this::cleanUpAndPowerCharacter);
+        this.gameStateService.getGameState().getPlayerTwoCharacters().forEach(this::cleanUpAndPowerCharacter);
+        return this.gameStateService.getGameState();
+    }
 
-            if (character.isDazed()) {
-                if (character.isTransformFromDaze()) {
-                    character.setMaxHealth(character.getMaxHealthTransformed());
-                    character.setCurrentDamage(0);
-                    character.setTransformed(true);
-                } else if (character.isImmortalFromDaze()) {
-                    character.setCurrentDamage(character.getMaxHealth()-character.getCurrentPower());
-                    character.setCurrentPower(0);
-                    character.setInjured(true);
-                } else {
-                    character.setMaxHealth(character.getMaxHealthInjured());
-                    character.setCurrentDamage(0);
-                    character.setInjured(true);
-                }
+    private void cleanUpAndPowerCharacter(Character character) {
+        if (character.isKo())
+            return;
 
-                character.setDazed(false);
+        if (character.isDazed()) {
+            if (character.isTransformFromDaze()) {
+                character.setMaxHealth(character.getMaxHealthTransformed());
+                character.setCurrentDamage(0);
+                character.setTransformed(true);
+            } else if (character.isImmortalFromDaze()) {
+                character.setCurrentDamage(character.getMaxHealth()-character.getCurrentPower());
+                character.setCurrentPower(0);
+                character.setInjured(true);
+            } else {
+                character.setMaxHealth(character.getMaxHealthInjured());
+                character.setCurrentDamage(0);
+                character.setInjured(true);
             }
 
-            character.setCurrentPower(character.getCurrentPower()+character.getPowerGain());
+            character.setDazed(false);
+        }
 
-            normalize(character);
-        });
-        return this.gameStateService.getGameState();
+        if (character.isGruntsKo()) {
+            character.setShowGrunts(false);
+            character.setGruntsCurrentDamage(0);
+        }
+
+        character.setCurrentPower(character.getCurrentPower()+character.getPowerGain());
+
+        normalize(character);
     }
 
     private void normalize(Character character) {
@@ -64,9 +145,21 @@ public class CharacterStateService {
                 character.setKo(true);
             else
                 character.setDazed(true);
+            character.setHasExtract(false);
         } else {
             character.setDazed(false);
             character.setKo(false);
+        }
+
+        if (character.isHasGrunts()) {
+            if (character.getGruntsCurrentDamage() >= character.getGruntsMaxHealth()) {
+                character.setGruntsKo(true);
+                character.setGruntsHasExtract(false);
+            } else {
+                character.setGruntsKo(false);
+            }
+
+            character.setGruntPercentHealth((int)(((double)character.getGruntsCurrentDamage()/character.getGruntsMaxHealth())*100));
         }
 
         if (character.getCurrentPower() > character.getMaxPower()) {
@@ -77,35 +170,4 @@ public class CharacterStateService {
         character.setPercentPower((int)(((double)character.getCurrentPower()/character.getMaxPower())*100));
     }
 
-    private @Builder.Default String id = UUID.randomUUID().toString();
-    private @Builder.Default String name = "";
-    private @Builder.Default String image = "tag-clean.png";
-    private @Builder.Default String normalImage = "tag-clean.png";
-    private @Builder.Default String transformImage = "tag-clean.png";
-    private @Builder.Default int currentDamage = 0;
-    private @Builder.Default int maxHealth = 0;
-    private @Builder.Default int percentHealth = 0;
-    private @Builder.Default int maxHealthNormal = 0;
-    private @Builder.Default int maxHealthInjured = 0;
-    private @Builder.Default int maxHealthTransformed = 0;
-    private @Builder.Default int maxHealthTransformedInjured = 0;
-    private @Builder.Default int currentPower = 0;
-    private @Builder.Default int maxPower = 10;
-    private @Builder.Default int percentPower = 0;
-    private @Builder.Default int powerGain = 1;
-    private @Builder.Default boolean activated = false;
-    private @Builder.Default boolean hasExtract = false;
-    private @Builder.Default boolean dazed = false;
-    private @Builder.Default boolean ko = false;
-    private @Builder.Default boolean injured = false;
-    private @Builder.Default boolean canTransform = false;
-    private @Builder.Default boolean transformed = false;
-    private @Builder.Default boolean transformFromDaze = false;
-    private @Builder.Default boolean immortalFromDaze = false;
-    private @Builder.Default boolean hasGrunts = false;
-    private @Builder.Default boolean showGrunts = false;
-    private @Builder.Default int gruntsCurrentDamage = 0;
-    private @Builder.Default int gruntsMaxHealth = 0;
-    private @Builder.Default int gruntPercentHealth = 0;
-    private @Builder.Default boolean gruntsHasExtract = false;
 }

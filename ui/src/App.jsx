@@ -9,6 +9,7 @@ import PlayerOneCharacters from "./pages/PlayerOneCharacters.jsx";
 import PlayerTwoCharacters from "./pages/PlayerTwoCharacters.jsx";
 import LeftPlayerSimple from "./pages/LeftPlayerSimple.jsx"
 import RightPlayerSimple from "./pages/RightPlayerSimple.jsx"
+import CharacterConfigPage from "./pages/CharacterConfigPage.jsx";
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
               <Route path="leftSimple" element={<LeftPlayerSimple />} />
               <Route path="rightSimple" element={<RightPlayerSimple />} />
               <Route path="config" element={<PlayerDetails />} />
+              <Route path="characterConfig" element={<CharacterConfigPage />} />
               <Route path="board" element={<PlayerScore />} />
               <Route path="*" element={<Menu />} />
           </Routes>
