@@ -10,6 +10,9 @@ import PlayerTwoCharacters from "./pages/PlayerTwoCharacters.jsx";
 import LeftPlayerSimple from "./pages/LeftPlayerSimple.jsx"
 import RightPlayerSimple from "./pages/RightPlayerSimple.jsx"
 import CharacterConfigPage from "./pages/CharacterConfigPage.jsx";
+import ScreenConfigPage from "./pages/ScreenConfigPage.jsx";
+import WhiteTimer from "./pages/WhiteTimer.jsx";
+import BlackTimer from "./pages/BlackTimer.jsx";
 
 function App() {
 
@@ -19,12 +22,15 @@ function App() {
               <Route path="one" element={<PlayerOneCharacters />} />
               <Route path="two" element={<PlayerTwoCharacters />} />
               <Route path="score" element={<ScoreOverlay />} />
-              <Route path="scorePill" element={<ScorePillOverlay />} />
-              <Route path="leftSimple" element={<LeftPlayerSimple />} />
-              <Route path="rightSimple" element={<RightPlayerSimple />} />
+              <Route path="score-pill" element={<ScorePillOverlay />} />
+              <Route path="left-simple" element={<LeftPlayerSimple />} />
+              <Route path="right-simple" element={<RightPlayerSimple />} />
               <Route path="config" element={<PlayerDetails />} />
               <Route path="characterConfig" element={<CharacterConfigPage />} />
+              <Route path="screenConfig" element={<ScreenConfigPage />} />
               <Route path="board" element={<PlayerScore />} />
+              <Route path="white-timer" element={<WhiteTimer />} />
+              <Route path="black-timer" element={<BlackTimer />} />
               <Route path="*" element={<Menu />} />
           </Routes>
       </Router>

@@ -5,6 +5,7 @@ import lombok.Data;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.List;
 
 @Data
@@ -20,6 +21,7 @@ public class GameState {
     private @Builder.Default int characterWidth = 200;
     private @Builder.Default int characterOffset = 150;
     private @Builder.Default int gruntPadding = 50;
+    private @Builder.Default Date countdownDate = new Date();
     private @Builder.Default List<Character> playerOneCharacters = new ArrayList<>();
     private @Builder.Default List<Character> playerTwoCharacters = new ArrayList<>();
    /* private @Builder.Default List<Character> playerOneCharacters =

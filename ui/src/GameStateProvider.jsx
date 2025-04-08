@@ -31,11 +31,13 @@ const GameStateProvider = ({ children }) => {
         characterWidth: 0,
         characterOffset: 0,
         gruntPadding: 0,
-        playerOneCharacters: []
+        countdownDate: '2025-03-08T12:00:00',
+        playerOneCharacters: [],
+        playerTwoCharacters: []
     });
 
     useEffect(() => {
-        fetch('http://localhost:8080/config/state')
+        fetch('/config/state')
             .then(response => response.json())
             .then(responseData => {
                 setGameState(responseData);
@@ -48,7 +50,7 @@ const GameStateProvider = ({ children }) => {
 
     useEffect(() => {
         const client = new Client({
-            brokerURL: 'ws://localhost:8080/ws', //'ws://' + window.location.host + '/ws',
+            brokerURL: 'ws://' + window.location.host + '/ws', //'ws://localhost:8080/ws', //
             reconnectDelay: 5000,
             onConnect: () => {
                 console.log('Connected to WebSocket');

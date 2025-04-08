@@ -13,4 +13,42 @@
   "transformImage": "agent-venom-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 6
+},{
+  "id": "amazing-spider-man",
+  "name": "Amazing Spider Man",
+  "normalImage": "amazing-spider-man-icon.png",
+  "transformImage": "amazing-spider-man-icon.png",
+  "maxHealthNormal": 6,
+  "maxHealthInjured": 6
+},{
+  "id": "ancient-one",
+  "name": "Ancient One",
+  "normalImage": "ancient-one-icon.png",
+  "transformImage": "ancient-one-icon.png",
+  "maxHealthNormal": 6,
+  "maxHealthInjured": 6,
+  "powerGain": 2
+},{
+  "id": "angel",
+  "name": "Angel",
+  "normalImage": "angel-icon.png",
+  "transformImage": "angel-icon.png",
+  "maxHealthNormal": 5,
+  "maxHealthInjured": 5
+},{
+  "id": "angela",
+  "name": "Angela",
+  "normalImage": "angela-icon.png",
+  "transformImage": "angela-icon.png",
+  "maxHealthNormal": 6,
+  "maxHealthInjured": 7,
+  "powerGain": 2
+},{
+  "id": "ant-man",
+  "name": "Ant Man",
+  "normalImage": "ant-man-icon.png",
+  "transformImage": "ant-man-icon.png",
+  "maxHealthNormal": 5,
+  "maxHealthInjured": 5
 }]
+

@@ -28,7 +28,9 @@ const newJsonObject = {
     characterWidth: 0,
     characterOffset: 0,
     gruntPadding: 0,
-    playerOneCharacters: []
+    countdownDate: '2025-03-08T12:00:00',
+    playerOneCharacters: [],
+    playerTwoCharacters: []
 };
 
 const GameStateContext = React.createContext(newJsonObject);
