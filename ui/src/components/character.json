@@ -1,53 +1,69 @@
 [{
   "id": "abomination",
   "name": "Abomination",
-  "normalImage": "abomination-icon.png",
-  "transformImage": "abomination-icon.png",
+  "normalImage": "icons/abomination-icon.png",
+  "transformImage": "icons/abomination-icon.png",
   "maxHealthNormal": 7,
   "maxHealthInjured": 7,
   "powerGain": 2
 },{
   "id": "agent-venom",
   "name": "Agent Venom",
-  "normalImage": "agent-venom-icon.png",
-  "transformImage": "agent-venom-icon.png",
+  "normalImage": "icons/agent-venom-icon.png",
+  "transformImage": "icons/agent-venom-icon.png",
   "maxHealthNormal": 6,
-  "maxHealthInjured": 6
+  "maxHealthInjured": 6,
+  "maxHealthTransformed": 7,
+  "maxHealthTransformedInjured": 7,
+  "canTransform": true,
+  "hasGrunts": true,
+  "showGrunts": true,
+  "grunts": [{
+    "id": "agent-venom-grunt-1",
+    "name": "Agent Venom Grunt 1",
+    "image": "icons/agent-venom-icon.png",
+    "maxHealth": 3
+  },{
+    "id": "agent-venom-grunt-2",
+    "name": "Agent Venom Grunt 2",
+    "image": "icons/agent-venom-icon.png",
+    "maxHealth": 4
+  }]
 },{
   "id": "amazing-spider-man",
   "name": "Amazing Spider Man",
-  "normalImage": "amazing-spider-man-icon.png",
-  "transformImage": "amazing-spider-man-icon.png",
+  "normalImage": "icons/amazing-spider-man-icon.png",
+  "transformImage": "icons/amazing-spider-man-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 6
 },{
   "id": "ancient-one",
   "name": "Ancient One",
-  "normalImage": "ancient-one-icon.png",
-  "transformImage": "ancient-one-icon.png",
+  "normalImage": "icons/ancient-one-icon.png",
+  "transformImage": "icons/ancient-one-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 6,
   "powerGain": 2
 },{
   "id": "angel",
   "name": "Angel",
-  "normalImage": "angel-icon.png",
-  "transformImage": "angel-icon.png",
+  "normalImage": "icons/angel-icon.png",
+  "transformImage": "icons/angel-icon.png",
   "maxHealthNormal": 5,
   "maxHealthInjured": 5
 },{
   "id": "angela",
   "name": "Angela",
-  "normalImage": "angela-icon.png",
-  "transformImage": "angela-icon.png",
+  "normalImage": "icons/angela-icon.png",
+  "transformImage": "icons/angela-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 7,
   "powerGain": 2
 },{
   "id": "ant-man",
   "name": "Ant Man",
-  "normalImage": "ant-man-icon.png",
-  "transformImage": "ant-man-icon.png",
+  "normalImage": "icons/ant-man-icon.png",
+  "transformImage": "icons/ant-man-icon.png",
   "maxHealthNormal": 5,
   "maxHealthInjured": 5
 }]

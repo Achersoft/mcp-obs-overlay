@@ -37,7 +37,7 @@ const GameStateProvider = ({ children }) => {
     });
 
     useEffect(() => {
-        fetch('/config/state')
+        fetch('http://localhost:8080/config/state')
             .then(response => response.json())
             .then(responseData => {
                 setGameState(responseData);
@@ -50,7 +50,7 @@ const GameStateProvider = ({ children }) => {
 
     useEffect(() => {
         const client = new Client({
-            brokerURL: 'ws://' + window.location.host + '/ws', //'ws://localhost:8080/ws', //
+            brokerURL: 'ws://localhost:8080/ws', //'ws://' + window.location.host + '/ws',
             reconnectDelay: 5000,
             onConnect: () => {
                 console.log('Connected to WebSocket');

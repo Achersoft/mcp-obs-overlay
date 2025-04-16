@@ -1,6 +1,8 @@
 package achersoft.mcp;
 
+import lombok.Builder;
 import org.springframework.stereotype.Component;
+import org.springframework.util.CollectionUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -89,11 +91,209 @@ public class CharacterStateService {
         return this.gameStateService.getGameState();
     }
 
-    public GameState playerOneTakeDamageGrunts(String id) {
+    public GameState playerOneHealDamage(String id) {
         this.gameStateService.getGameState().getPlayerOneCharacters().forEach(character -> {
             if(character.getId().equals(id)) {
-                if (character.getGruntsCurrentDamage() < character.getGruntsMaxHealth()) {
-                    character.setGruntsCurrentDamage(character.getGruntsCurrentDamage() + 1);
+                if (character.getCurrentDamage() > 0) {
+                    character.setCurrentDamage(character.getCurrentDamage() - 1);
+                    normalize(character);
+                }
+            }
+        });
+        return this.gameStateService.getGameState();
+    }
+
+    public GameState playerOneTakeDamageGrunts(String characterId, String gruntId) {
+        this.gameStateService.getGameState().getPlayerOneCharacters().forEach(character -> {
+            if(character.getId().equals(characterId)) {
+                character.getGrunts().forEach(grunt -> {
+                    if(grunt.getId().equals(gruntId)) {
+                        if (grunt.getCurrentDamage() < grunt.getMaxHealth()) {
+                            grunt.setCurrentDamage(grunt.getCurrentDamage() + 1);
+                            normalize(character);
+                        }
+                    }
+                });
+            }
+        });
+        return this.gameStateService.getGameState();
+    }
+
+    public GameState playerOneHealDamageGrunts(String characterId, String gruntId) {
+        this.gameStateService.getGameState().getPlayerOneCharacters().forEach(character -> {
+            if(character.getId().equals(characterId)) {
+                character.getGrunts().forEach(grunt -> {
+                    if(grunt.getId().equals(gruntId)) {
+                        if (grunt.getCurrentDamage() > 0) {
+                            grunt.setCurrentDamage(grunt.getCurrentDamage() - 1);
+                            normalize(character);
+                        }
+                    }
+                });
+            }
+        });
+        return this.gameStateService.getGameState();
+    }
+
+    public GameState playerOneToggleActivated(String id) {
+        this.gameStateService.getGameState().getPlayerOneCharacters().forEach(character -> {
+            if(character.getId().equals(id)) {
+                character.setActivated(!character.isActivated());
+            }
+        });
+        return this.gameStateService.getGameState();
+    }
+
+    public GameState playerOneToggleHasExtract(String id) {
+        this.gameStateService.getGameState().getPlayerOneCharacters().forEach(character -> {
+            if(character.getId().equals(id)) {
+                character.setHasExtract(!character.isHasExtract());
+                normalize(character);
+            }
+        });
+        return this.gameStateService.getGameState();
+    }
+
+    public GameState playerOneToggleInjured(String id) {
+        this.gameStateService.getGameState().getPlayerOneCharacters().forEach(character -> {
+            if(character.getId().equals(id)) {
+                character.setInjured(!character.isInjured());
+                normalize(character);
+            }
+        });
+        return this.gameStateService.getGameState();
+    }
+
+    public GameState playerOneToggleTransform(String id) {
+        this.gameStateService.getGameState().getPlayerOneCharacters().forEach(character -> {
+            if(character.getId().equals(id)) {
+                if (character.isCanTransform()) {
+                    character.setTransformed(!character.isTransformed());
+
+                    if (character.isTransformed()) {
+                        character.setImage(character.getTransformImage());
+                        if (character.isInjured())
+                            character.setMaxHealth(character.getMaxHealthTransformedInjured());
+                        else
+                            character.setMaxHealth(character.getMaxHealthTransformed());
+                    } else {
+                        character.setImage(character.getNormalImage());
+                        if (character.isInjured())
+                            character.setMaxHealth(character.getMaxHealthInjured());
+                        else
+                            character.setMaxHealth(character.getMaxHealthNormal());
+                    }
+                    normalize(character);
+                }
+            }
+        });
+        return this.gameStateService.getGameState();
+    }
+
+    public GameState playerTwoTakeDamage(String id) {
+        this.gameStateService.getGameState().getPlayerTwoCharacters().forEach(character -> {
+            if(character.getId().equals(id)) {
+                if (character.getCurrentDamage() < character.getMaxHealth()) {
+                    character.setCurrentDamage(character.getCurrentDamage() + 1);
+                    normalize(character);
+                }
+            }
+        });
+        return this.gameStateService.getGameState();
+    }
+
+    public GameState playerTwoHealDamage(String id) {
+        this.gameStateService.getGameState().getPlayerTwoCharacters().forEach(character -> {
+            if(character.getId().equals(id)) {
+                if (character.getCurrentDamage() > 0) {
+                    character.setCurrentDamage(character.getCurrentDamage() - 1);
+                    normalize(character);
+                }
+            }
+        });
+        return this.gameStateService.getGameState();
+    }
+
+    public GameState playerTwoTakeDamageGrunts(String characterId, String gruntId) {
+        this.gameStateService.getGameState().getPlayerTwoCharacters().forEach(character -> {
+            if(character.getId().equals(characterId)) {
+                character.getGrunts().forEach(grunt -> {
+                    if(grunt.getId().equals(gruntId)) {
+                        if (grunt.getCurrentDamage() < grunt.getMaxHealth()) {
+                            grunt.setCurrentDamage(grunt.getCurrentDamage() + 1);
+                            normalize(character);
+                        }
+                    }
+                });
+            }
+        });
+        return this.gameStateService.getGameState();
+    }
+
+    public GameState playerTwoHealDamageGrunts(String characterId, String gruntId) {
+        this.gameStateService.getGameState().getPlayerTwoCharacters().forEach(character -> {
+            if(character.getId().equals(characterId)) {
+                character.getGrunts().forEach(grunt -> {
+                    if(grunt.getId().equals(gruntId)) {
+                        if (grunt.getCurrentDamage() > 0) {
+                            grunt.setCurrentDamage(grunt.getCurrentDamage() - 1);
+                            normalize(character);
+                        }
+                    }
+                });
+            }
+        });
+        return this.gameStateService.getGameState();
+    }
+
+    public GameState playerTwoToggleActivated(String id) {
+        this.gameStateService.getGameState().getPlayerTwoCharacters().forEach(character -> {
+            if(character.getId().equals(id)) {
+                character.setActivated(!character.isActivated());
+            }
+        });
+        return this.gameStateService.getGameState();
+    }
+
+    public GameState playerTwoToggleHasExtract(String id) {
+        this.gameStateService.getGameState().getPlayerTwoCharacters().forEach(character -> {
+            if(character.getId().equals(id)) {
+                character.setHasExtract(!character.isHasExtract());
+                normalize(character);
+            }
+        });
+        return this.gameStateService.getGameState();
+    }
+
+    public GameState playerTwoToggleInjured(String id) {
+        this.gameStateService.getGameState().getPlayerTwoCharacters().forEach(character -> {
+            if(character.getId().equals(id)) {
+                character.setInjured(!character.isInjured());
+                normalize(character);
+            }
+        });
+        return this.gameStateService.getGameState();
+    }
+
+    public GameState playerTwoToggleTransform(String id) {
+        this.gameStateService.getGameState().getPlayerTwoCharacters().forEach(character -> {
+            if(character.getId().equals(id)) {
+                if (character.isCanTransform()) {
+                    character.setTransformed(!character.isTransformed());
+
+                    if (character.isTransformed()) {
+                        character.setImage(character.getTransformImage());
+                        if (character.isInjured())
+                            character.setMaxHealth(character.getMaxHealthTransformedInjured());
+                        else
+                            character.setMaxHealth(character.getMaxHealthTransformed());
+                    } else {
+                        character.setImage(character.getNormalImage());
+                        if (character.isInjured())
+                            character.setMaxHealth(character.getMaxHealthInjured());
+                        else
+                            character.setMaxHealth(character.getMaxHealthNormal());
+                    }
                     normalize(character);
                 }
             }
@@ -129,10 +329,7 @@ public class CharacterStateService {
             character.setDazed(false);
         }
 
-        if (character.isGruntsKo()) {
-            character.setShowGrunts(false);
-            character.setGruntsCurrentDamage(0);
-        }
+        character.setActivated(false);
 
         character.setCurrentPower(character.getCurrentPower()+character.getPowerGain());
 
@@ -141,25 +338,30 @@ public class CharacterStateService {
 
     private void normalize(Character character) {
         if (character.getCurrentDamage() >= character.getMaxHealth()) {
-            if (character.isInjured())
+            if (character.isInjured()) {
                 character.setKo(true);
-            else
+                character.setDazed(false);
+            } else {
+                character.setKo(false);
                 character.setDazed(true);
+            }
             character.setHasExtract(false);
         } else {
             character.setDazed(false);
             character.setKo(false);
         }
 
-        if (character.isHasGrunts()) {
-            if (character.getGruntsCurrentDamage() >= character.getGruntsMaxHealth()) {
-                character.setGruntsKo(true);
-                character.setGruntsHasExtract(false);
-            } else {
-                character.setGruntsKo(false);
-            }
+        if (character.isHasGrunts() && !CollectionUtils.isEmpty(character.getGrunts())) {
+            character.getGrunts().forEach(grunt -> {
+                if (grunt.getCurrentDamage() >= grunt.getMaxHealth()) {
+                    grunt.setKo(true);
+                    grunt.setHasExtract(false);
+                } else {
+                    grunt.setKo(false);
+                }
 
-            character.setGruntPercentHealth((int)(((double)character.getGruntsCurrentDamage()/character.getGruntsMaxHealth())*100));
+                grunt.setPercentHealth((int)(((double)grunt.getCurrentDamage()/grunt.getMaxHealth())*100));
+            });
         }
 
         if (character.getCurrentPower() > character.getMaxPower()) {

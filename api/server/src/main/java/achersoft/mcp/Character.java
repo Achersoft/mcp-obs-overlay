@@ -5,6 +5,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
 
 @Data
@@ -39,9 +41,5 @@ public class Character {
     private @Builder.Default boolean immortalFromDaze = false;
     private @Builder.Default boolean hasGrunts = false;
     private @Builder.Default boolean showGrunts = false;
-    private @Builder.Default int gruntsCurrentDamage = 0;
-    private @Builder.Default int gruntsMaxHealth = 0;
-    private @Builder.Default int gruntPercentHealth = 0;
-    private @Builder.Default boolean gruntsHasExtract = false;
-    private @Builder.Default boolean gruntsKo = false;
+    private @Builder.Default List<Grunt> grunts = new ArrayList<>();
 }

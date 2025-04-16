@@ -27,4 +27,84 @@ public class CharacterController {
                 messagingTemplate.convertAndSend("/topic/public", characterStateService.modifyCharactersPlayerTwo(characters));
         }
 
+        @PostMapping("/one/damage")
+        public void playerOneTakeDamage(@RequestBody String id) {
+                messagingTemplate.convertAndSend("/topic/public", characterStateService.playerOneTakeDamage(id));
+        }
+
+        @PostMapping("/one/heal")
+        public void playerOneHealDamage(@RequestBody String id) {
+                messagingTemplate.convertAndSend("/topic/public", characterStateService.playerOneHealDamage(id));
+        }
+
+        @PostMapping("/one/grunt/damage")
+        public void playerOneTakeDamageGrunts(@RequestBody GruntRequest gruntRequest) {
+                messagingTemplate.convertAndSend("/topic/public", characterStateService.playerOneTakeDamageGrunts(gruntRequest.getCharacterId(), gruntRequest.getGruntId()));
+        }
+
+        @PostMapping("/one/grunt/heal")
+        public void playerOneHealDamageGrunts(@RequestBody GruntRequest gruntRequest) {
+                messagingTemplate.convertAndSend("/topic/public", characterStateService.playerOneHealDamageGrunts(gruntRequest.getCharacterId(), gruntRequest.getGruntId()));
+        }
+
+        @PostMapping("/one/activated")
+        public void playerOneToggleActivated(@RequestBody String id) {
+                messagingTemplate.convertAndSend("/topic/public", characterStateService.playerOneToggleActivated(id));
+        }
+
+        @PostMapping("/one/extract")
+        public void playerOneToggleExtract(@RequestBody String id) {
+                messagingTemplate.convertAndSend("/topic/public", characterStateService.playerOneToggleHasExtract(id));
+        }
+
+        @PostMapping("/one/injured")
+        public void playerOneToggleInjured(@RequestBody String id) {
+                messagingTemplate.convertAndSend("/topic/public", characterStateService.playerOneToggleInjured(id));
+        }
+
+        @PostMapping("/one/transform")
+        public void playerOneToggleTransform(@RequestBody String id) {
+                messagingTemplate.convertAndSend("/topic/public", characterStateService.playerOneToggleTransform(id));
+        }
+
+        @PostMapping("/two/damage")
+        public void playerTwoTakeDamage(@RequestBody String id) {
+                messagingTemplate.convertAndSend("/topic/public", characterStateService.playerTwoTakeDamage(id));
+        }
+
+        @PostMapping("/two/heal")
+        public void playerTwoHealDamage(@RequestBody String id) {
+                messagingTemplate.convertAndSend("/topic/public", characterStateService.playerTwoHealDamage(id));
+        }
+
+        @PostMapping("/two/grunt/damage")
+        public void playerTwoTakeDamageGrunts(@RequestBody GruntRequest gruntRequest) {
+                messagingTemplate.convertAndSend("/topic/public", characterStateService.playerTwoTakeDamageGrunts(gruntRequest.getCharacterId(), gruntRequest.getGruntId()));
+        }
+
+        @PostMapping("/two/grunt/heal")
+        public void playerTwoHealDamageGrunts(@RequestBody GruntRequest gruntRequest) {
+                messagingTemplate.convertAndSend("/topic/public", characterStateService.playerTwoHealDamageGrunts(gruntRequest.getCharacterId(), gruntRequest.getGruntId()));
+        }
+
+        @PostMapping("/two/activated")
+        public void playerTwoToggleActivated(@RequestBody String id) {
+                messagingTemplate.convertAndSend("/topic/public", characterStateService.playerTwoToggleActivated(id));
+        }
+
+        @PostMapping("/two/extract")
+        public void playerTwoToggleExtract(@RequestBody String id) {
+                messagingTemplate.convertAndSend("/topic/public", characterStateService.playerTwoToggleHasExtract(id));
+        }
+
+        @PostMapping("/two/injured")
+        public void playerTwoToggleInjured(@RequestBody String id) {
+                messagingTemplate.convertAndSend("/topic/public", characterStateService.playerTwoToggleInjured(id));
+        }
+
+        @PostMapping("/two/transform")
+        public void playerTwoToggleTransform(@RequestBody String id) {
+                messagingTemplate.convertAndSend("/topic/public", characterStateService.playerTwoToggleTransform(id));
+        }
+
 }

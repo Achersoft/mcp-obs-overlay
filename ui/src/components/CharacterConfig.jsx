@@ -7,11 +7,9 @@ import items from "./character.json";
 
 const CharacterConfig = () => {
     const gameState  = React.useContext(GameStateContext);
-    const [playerOneName, setplayerOneName] = useState(gameState.playerOne.name);
-    const [playerTwoName, setplayerTwoName] = useState(gameState.playerTwo.name);
 
      const handlePlayerOneChange = (event, item, reason) => {
-       fetch('/character/one', {
+       fetch('http://localhost:8080/character/one', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -21,7 +19,7 @@ const CharacterConfig = () => {
      };
 
      const handlePlayerTwoChange = (event, item, reason) => {
-            fetch('/character/two', {
+            fetch('http://localhost:8080/character/two', {
                  method: 'POST',
                  headers: {
                      'Content-Type': 'application/json',
