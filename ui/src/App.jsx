@@ -7,6 +7,8 @@ import PlayerDetails from "./pages/PlayerDetails.jsx";
 import Menu from "./pages/Menu.jsx";
 import PlayerOneCharacters from "./pages/PlayerOneCharacters.jsx";
 import PlayerTwoCharacters from "./pages/PlayerTwoCharacters.jsx";
+import PlayerOneCharactersNoScore from "./pages/PlayerOneCharactersNoScore.jsx";
+import PlayerTwoCharactersNoScore from "./pages/PlayerTwoCharactersNoScore.jsx";
 import LeftPlayerSimple from "./pages/LeftPlayerSimple.jsx"
 import RightPlayerSimple from "./pages/RightPlayerSimple.jsx"
 import CharacterConfigPage from "./pages/CharacterConfigPage.jsx";
@@ -23,6 +25,8 @@ function App() {
               <Route path="character-state" element={<CharacterStatePage />} />
               <Route path="one" element={<PlayerOneCharacters />} />
               <Route path="two" element={<PlayerTwoCharacters />} />
+              <Route path="ones" element={<PlayerOneCharactersNoScore />} />
+              <Route path="twos" element={<PlayerTwoCharactersNoScore />} />
               <Route path="score" element={<ScoreOverlay />} />
               <Route path="score-pill" element={<ScorePillOverlay />} />
               <Route path="left-simple" element={<LeftPlayerSimple />} />

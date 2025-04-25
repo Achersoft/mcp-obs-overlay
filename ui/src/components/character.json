@@ -1,70 +1,909 @@
-[{
-  "id": "abomination",
-  "name": "Abomination",
-  "normalImage": "icons/abomination-icon.png",
-  "transformImage": "icons/abomination-icon.png",
-  "maxHealthNormal": 7,
-  "maxHealthInjured": 7,
-  "powerGain": 2
-},{
+[
+  {
+    "id": "abomination",
+    "name": "Abomination",
+    "normalImage": "abomination-icon.png",
+    "transformImage": "abomination-icon.png",
+    "maxHealthNormal": 7,
+    "maxHealthInjured": 7,
+    "powerGain": 2
+  },{
   "id": "agent-venom",
   "name": "Agent Venom",
-  "normalImage": "icons/agent-venom-icon.png",
-  "transformImage": "icons/agent-venom-icon.png",
+  "normalImage": "agent-venom-icon.png",
+  "transformImage": "agent-venom-icon.png",
   "maxHealthNormal": 6,
-  "maxHealthInjured": 6,
-  "maxHealthTransformed": 7,
-  "maxHealthTransformedInjured": 7,
-  "canTransform": true,
-  "hasGrunts": true,
-  "showGrunts": true,
-  "grunts": [{
-    "id": "agent-venom-grunt-1",
-    "name": "Agent Venom Grunt 1",
-    "image": "icons/agent-venom-icon.png",
-    "maxHealth": 3
-  },{
-    "id": "agent-venom-grunt-2",
-    "name": "Agent Venom Grunt 2",
-    "image": "icons/agent-venom-icon.png",
-    "maxHealth": 4
-  }]
+  "maxHealthInjured": 6
 },{
   "id": "amazing-spider-man",
   "name": "Amazing Spider Man",
-  "normalImage": "icons/amazing-spider-man-icon.png",
-  "transformImage": "icons/amazing-spider-man-icon.png",
+  "normalImage": "amazing-spider-man-icon.png",
+  "transformImage": "amazing-spider-man-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 6
 },{
   "id": "ancient-one",
   "name": "Ancient One",
-  "normalImage": "icons/ancient-one-icon.png",
-  "transformImage": "icons/ancient-one-icon.png",
+  "normalImage": "ancient-one-icon.png",
+  "transformImage": "ancient-one-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 6,
   "powerGain": 2
 },{
   "id": "angel",
   "name": "Angel",
-  "normalImage": "icons/angel-icon.png",
-  "transformImage": "icons/angel-icon.png",
+  "normalImage": "angel-icon.png",
+  "transformImage": "angel-icon.png",
   "maxHealthNormal": 5,
   "maxHealthInjured": 5
 },{
   "id": "angela",
   "name": "Angela",
-  "normalImage": "icons/angela-icon.png",
-  "transformImage": "icons/angela-icon.png",
+  "normalImage": "angela-icon.png",
+  "transformImage": "angela-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 7,
   "powerGain": 2
 },{
   "id": "ant-man",
   "name": "Ant Man",
-  "normalImage": "icons/ant-man-icon.png",
-  "transformImage": "icons/ant-man-icon.png",
+  "normalImage": "ant-man-icon.png",
+  "transformImage": "ant-man-icon.png",
   "maxHealthNormal": 5,
   "maxHealthInjured": 5
-}]
+},{
+  "id": "apocalypse",
+  "name": "Apocalypse",
+  "normalImage": "apocalypse-icon.png",
+  "transformImage": "apocalypse-icon.png",
+  "maxHealthNormal": 7,
+  "maxHealthInjured": 8
+},{
+  "id": "archangel",
+  "name": "Archangel",
+  "normalImage": "archangel-icon.png",
+  "transformImage": "archangel-icon.png",
+  "maxHealthNormal": 5,
+  "maxHealthInjured": 6
+},{
+  "id": "arnim-zola",
+  "name": "Arnim Zola",
+  "normalImage": "arnim-zola-icon.png",
+  "transformImage": "arnim-zola-icon.png",
+  "maxHealthNormal": 6,
+  "maxHealthInjured": 6
+},{
+  "id": "baron-helmut-zemo",
+  "name": "Baron Helmut Zemo",
+  "normalImage": "baron-helmut-zemo-icon.png",
+  "transformImage": "baron-helmut-zemo-icon.png",
+  "maxHealthNormal": 5,
+  "maxHealthInjured": 6
+},{
+  "id": "baron-mordo",
+  "name": "Baron Mordo",
+  "normalImage": "baron-mordo-icon.png",
+  "transformImage": "baron-mordo-icon.png",
+  "maxHealthNormal": 6,
+  "maxHealthInjured": 5
+},{
+  "id": "baron-strucker",
+  "name": "Baron Strucker",
+  "normalImage": "baron-strucker-icon.png",
+  "transformImage": "baron-strucker-icon.png",
+  "maxHealthNormal": 5,
+  "maxHealthInjured": 5
+},{
+  "id": "baron-zemo",
+  "name": "Baron Zemo",
+  "normalImage": "baron-zemo-icon.png",
+  "transformImage": "baron-zemo-icon.png",
+  "maxHealthNormal": 5,
+  "maxHealthInjured": 5
+},{
+  "id": "beast",
+  "name": "Beast",
+  "normalImage": "beast-icon.png",
+  "transformImage": "beast-icon.png",
+  "maxHealthNormal": 6,
+  "maxHealthInjured": 5
+},{
+  "id": "beta-ray-bill",
+  "name": "Beta Ray Bill",
+  "normalImage": "beta-ray-bill-icon.png",
+  "transformImage": "beta-ray-bill-icon.png",
+  "maxHealthNormal": 6,
+  "maxHealthInjured": 5,
+  "powerGain": 2
+},{
+  "id": "bishop",
+  "name": "Bishop",
+  "normalImage": "bishop-icon.png",
+  "transformImage": "bishop-icon.png",
+  "maxHealthNormal": 6,
+  "maxHealthInjured": 5
+},{
+  "id": "black-bolt",
+  "name": "Black Bolt",
+  "normalImage": "black-bolt-icon.png",
+  "transformImage": "black-bolt-icon.png",
+  "maxHealthNormal": 6,
+  "maxHealthInjured": 9,
+  "powerGain": 2
+},{
+  "id": "black-cat",
+  "name": "Black Cat",
+  "normalImage": "black-cat-icon.png",
+  "transformImage": "black-cat-icon.png",
+  "maxHealthNormal": 5,
+  "maxHealthInjured": 5
+},{
+  "id": "black-dwarf",
+  "name": "Black Dwarf",
+  "normalImage": "black-dwarf-icon.png",
+  "transformImage": "black-dwarf-icon.png",
+  "maxHealthNormal": 6,
+  "maxHealthInjured": 8
+},{
+  "id": "black-panther",
+  "name": "Black Panther",
+  "normalImage": "black-panther-icon.png",
+  "transformImage": "black-panther-icon.png",
+  "maxHealthNormal": 6,
+  "maxHealthInjured": 6
+},{
+  "id": "black-panther-chosen-of-bast",
+  "name": "Black Panther Chosen of Bast",
+  "normalImage": "black-panther-chosen-of-bast-icon.png",
+  "transformImage": "black-panther-chosen-of-bast-icon.png",
+  "maxHealthNormal": 5,
+  "maxHealthInjured": 5
+},{
+  "id": "black-swan",
+  "name": "Black Swan",
+  "normalImage": "black-swan-icon.png",
+  "transformImage": "black-swan-icon.png",
+  "maxHealthNormal": 6,
+  "maxHealthInjured": 6
+},{
+  "id": "black-widow",
+  "name": "Black Widow",
+  "normalImage": "black-widow-icon.png",
+  "transformImage": "black-widow-icon.png",
+  "maxHealthNormal": 4,
+  "maxHealthInjured": 4
+},{
+  "id": "black-widow-agent-of-shield",
+  "name": "Black Widow Agent of Shield",
+  "normalImage": "black-widow-agent-of-shield-icon.png",
+  "transformImage": "black-widow-agent-of-shield-icon.png",
+  "maxHealthNormal": 5,
+  "maxHealthInjured": 5
+},{
+  "id": "blade",
+  "name": "Blade",
+  "normalImage": "blade-icon.png",
+  "transformImage": "blade-icon.png",
+  "maxHealthNormal": 6,
+  "maxHealthInjured": 6
+},{
+  "id": "bob-agent-of-hydra",
+  "name": "Bob Agent of Hydra",
+  "normalImage": "bob-agent-of-hydra-icon.png",
+  "transformImage": "bob-agent-of-hydra-icon.png",
+  "maxHealthNormal": 3,
+  "maxHealthInjured": 3
+},{
+  "id": "bullseye",
+  "name": "Bullseye",
+  "normalImage": "bullseye-icon.png",
+  "transformImage": "bullseye-icon.png",
+  "maxHealthNormal": 4,
+  "maxHealthInjured": 4
+},{
+  "id": "cable",
+  "name": "Cable",
+  "normalImage": "cable-icon.png",
+  "transformImage": "cable-icon.png",
+  "maxHealthNormal": 7,
+  "maxHealthInjured": 7,
+  "powerGain": 2
+},{
+  "id": "captain-america-sam-wilson",
+  "name": "Captain America Sam Wilson",
+  "normalImage": "captain-america-sam-wilson-icon.png",
+  "transformImage": "captain-america-sam-wilson-icon.png",
+  "maxHealthNormal": 5,
+  "maxHealthInjured": 5
+},{
+  "id": "captain-america",
+  "name": "Captain America",
+  "normalImage": "captain-america-icon.png",
+  "transformImage": "captain-america-icon.png",
+  "maxHealthNormal": 5,
+  "maxHealthInjured": 6
+},{
+  "id": "captain-america-first-avenger",
+  "name": "Captain America First Avenger",
+  "normalImage": "captain-america-first-avenger-icon.png",
+  "transformImage": "captain-america-first-avenger-icon.png",
+  "maxHealthNormal": 6,
+  "maxHealthInjured": 5
+},{
+  "id": "captain-marvel",
+  "name": "Captain Marvel",
+  "normalImage": "captain-marvel-icon.png",
+  "transformImage": "captain-marvel-icon.png",
+  "maxHealthNormal": 6,
+  "maxHealthInjured": 6
+},{
+  "id": "captain-marvel-cosmic-avenger",
+  "name": "Captain Marvel Cosmic Avenger",
+  "normalImage": "captain-marvel-cosmic-avenger-icon.png",
+  "transformImage": "captain-marvel-cosmic-avenger-transform-icon.png",
+  "maxHealthNormal": 7,
+  "maxHealthInjured": 7
+},{
+  "id": "carnage",
+  "name": "Carnage",
+  "normalImage": "carnage-icon.png",
+  "transformImage": "carnage-icon.png",
+  "maxHealthNormal": 7,
+  "maxHealthInjured": 7
+},{
+  "id": "cassandra-nova",
+  "name": "Cassandra Nova",
+  "normalImage": "cassandra-nova-icon.png",
+  "transformImage": "cassandra-nova-icon.png",
+  "maxHealthNormal": 7,
+  "maxHealthInjured": 6
+},{
+  "id": "clea",
+  "name": "Clea",
+  "normalImage": "clea-icon.png",
+  "transformImage": "clea-icon.png",
+  "maxHealthNormal": 5,
+  "maxHealthInjured": 5
+},{
+  "id": "colossus",
+  "name": "Colossus",
+  "normalImage": "colossus-icon.png",
+  "transformImage": "colossus-icon.png",
+  "maxHealthNormal": 6,
+  "maxHealthInjured": 7
+},{
+  "id": "corvus-glaive",
+  "name": "Corvus Glaive",
+  "normalImage": "corvus-glaive-icon.png",
+  "transformImage": "corvus-glaive-icon.png",
+  "maxHealthNormal": 6,
+  "maxHealthInjured": 6
+},{
+  "id": "cosmic-ghost-rider",
+  "name": "Cosmic Ghost Rider",
+  "normalImage": "cosmic-ghost-rider-icon.png",
+  "transformImage": "cosmic-ghost-rider-icon.png",
+  "maxHealthNormal": 9,
+  "maxHealthInjured": 7
+},{
+  "id": "crimson-dynamo",
+  "name": "Crimson Dynamo",
+  "normalImage": "crimson-dynamo-icon.png",
+  "transformImage": "crimson-dynamo-icon.png",
+  "maxHealthNormal": 6,
+  "maxHealthInjured": 6
+},{
+  "id": "crossbones",
+  "name": "Crossbones",
+  "normalImage": "crossbones-icon.png",
+  "transformImage": "crossbones-icon.png",
+  "maxHealthNormal": 6,
+  "maxHealthInjured": 5
+},{
+  "id": "crossbones-merciless-merc",
+  "name": "Crossbones Merciless Merc",
+  "normalImage": "crossbones-merciless-merc-icon.png",
+  "transformImage": "crossbones-merciless-merc-icon.png",
+  "maxHealthNormal": 6,
+  "maxHealthInjured": 5
+},{
+  "id": "crystal",
+  "name": "Crystal",
+  "normalImage": "crystal-icon.png",
+  "transformImage": "crystal-icon.png",
+  "maxHealthNormal": 5,
+  "maxHealthInjured": 5
+},{
+  "id": "cyclops",
+  "name": "Cyclops",
+  "normalImage": "cyclops-icon.png",
+  "transformImage": "cyclops-icon.png",
+  "maxHealthNormal": 6,
+  "maxHealthInjured": 6
+},{
+  "id": "daredevil",
+  "name": "Daredevil",
+  "normalImage": "daredevil-icon.png",
+  "transformImage": "daredevil-icon.png",
+  "maxHealthNormal": 5,
+  "maxHealthInjured": 6
+},{
+  "id": "darkstar",
+  "name": "Darkstar",
+  "normalImage": "darkstar-icon.png",
+  "transformImage": "darkstar-icon.png",
+  "maxHealthNormal": 5,
+  "maxHealthInjured": 5
+},{
+  "id": "deadpool",
+  "name": "Deadpool",
+  "normalImage": "deadpool-icon.png",
+  "transformImage": "deadpool-icon.png",
+  "maxHealthNormal": 4,
+  "maxHealthInjured": 6
+},{
+  "id": "doc-ock-sinister-scientist",
+  "name": "Doc Ock Sinister Scientist",
+  "normalImage": "doc-ock-sinister-scientist-icon.png",
+  "transformImage": "doc-ock-sinister-scientist-icon.png",
+  "maxHealthNormal": 6,
+  "maxHealthInjured": 6
+},{
+  "id": "doctor-octopus",
+  "name": "Doctor Octopus",
+  "normalImage": "doctor-octopus-icon.png",
+  "transformImage": "doctor-octopus-icon.png",
+  "maxHealthNormal": 5,
+  "maxHealthInjured": 6
+},{
+  "id": "doctor-strange",
+  "name": "Doctor Strange",
+  "normalImage": "doctor-strange-icon.png",
+  "transformImage": "doctor-strange-icon.png",
+  "maxHealthNormal": 6,
+  "maxHealthInjured": 6
+},{
+  "id": "doctor-strange-sorcerer-supreme",
+  "name": "Doctor Strange Sorcerer Supreme",
+  "normalImage": "doctor-strange-sorcerer-supreme-icon.png",
+  "transformImage": "doctor-strange-sorcerer-supreme-icon.png",
+  "maxHealthNormal": 6,
+  "maxHealthInjured": 6,
+  "powerGain": 3
+},{
+  "id": "doctor-voodoo",
+  "name": "Doctor Voodoo",
+  "normalImage": "doctor-voodoo-icon.png",
+  "transformImage": "doctor-voodoo-icon.png",
+  "maxHealthNormal": 6,
+  "maxHealthInjured": 6
+},{
+  "id": "domino",
+  "name": "domino",
+  "normalImage": "domino-icon.png",
+  "transformImage": "domino-icon.png",
+  "maxHealthNormal": 5,
+  "maxHealthInjured": 5
+},{
+  "id": "dormammu",
+  "name": "Dormammu",
+  "normalImage": "dormammu-icon.png",
+  "transformImage": "dormammu-icon.png",
+  "maxHealthNormal": 10,
+  "maxHealthInjured": 12
+},{
+  "id": "dracula",
+  "name": "Dracula",
+  "normalImage": "dracula-icon.png",
+  "transformImage": "dracula-icon.png",
+  "maxHealthNormal": 7,
+  "maxHealthInjured": 7
+},{
+  "id": "drax-the-destroyer",
+  "name": "Drax the Destroyer",
+  "normalImage": "drax-the-destroyer-icon.png",
+  "transformImage": "drax-the-destroyer-icon.png",
+  "maxHealthNormal": 6,
+  "maxHealthInjured": 6
+},{
+  "id": "ebony-maw",
+  "name": "Ebony Maw",
+  "normalImage": "ebony-maw-icon.png",
+  "transformImage": "ebony-maw-icon.png",
+  "maxHealthNormal": 7,
+  "maxHealthInjured": 6,
+  "powerGain": 3
+},{
+  "id": "electro",
+  "name": "Electro",
+  "normalImage": "electro-icon.png",
+  "transformImage": "electro-icon.png",
+  "maxHealthNormal": 6,
+  "maxHealthInjured": 6
+},{
+  "id": "elektra",
+  "name": "Elektra",
+  "normalImage": "elektra-icon.png",
+  "transformImage": "elektra-icon.png",
+  "maxHealthNormal": 6,
+  "maxHealthInjured": 5
+},{
+  "id": "elsa-bloodstone",
+  "name": "Elsa Bloodstone",
+  "normalImage": "elsa-bloodstone-icon.png",
+  "transformImage": "elsa-bloodstone-icon.png",
+  "maxHealthNormal": 6,
+  "maxHealthInjured": 6
+},{
+  "id": "emma-frost",
+  "name": "Emma Frost",
+  "normalImage": "emma-frost-icon.png",
+  "transformImage": "emma-frost-transformed-icon.png",
+  "maxHealthNormal": 6,
+  "maxHealthInjured": 6
+},{
+  "id": "enchantress",
+  "name": "Enchantress",
+  "normalImage": "enchantress-icon.png",
+  "transformImage": "enchantress-icon.png",
+  "maxHealthNormal": 6,
+  "maxHealthInjured": 5,
+  "powerGain": 2
+},
+
+
+
+
+
+
+{
+  "id": "sabretooth",
+  "name": "Sabretooth",
+  "normalImage": "sabretooth-icon.png",
+  "transformImage": "sabretooth-icon.png",
+  "maxHealthNormal": 6,
+  "maxHealthInjured": 6
+},{
+  "id": "sabretooth-apex-predator",
+  "name": "Sabretooth Apex Predator",
+  "normalImage": "sabretooth-apex-predator-icon.png",
+  "transformImage": "sabretooth-apex-predator-icon.png",
+  "maxHealthNormal": 7,
+  "maxHealthInjured": 6
+},{
+  "id": "sandman",
+  "name": "Sandman",
+  "normalImage": "sandman-icon.png",
+  "transformImage": "sandman-icon.png",
+  "maxHealthNormal": 6,
+  "maxHealthInjured": 7,
+  "hasGrunts": true,
+  "showGrunts": true,
+  "grunts": [{
+    "id": "sandman-grunt-1",
+    "name": "Sandman Grunt 1",
+    "image": "icons/sand-construct-1-icon.png",
+    "maxHealth": 2
+  },{
+    "id": "sandman-grunt-2",
+    "name": "Sandman Grunt 2",
+    "image": "icons/sand-construct-2-icon.png",
+    "maxHealth": 2
+  }]
+},{
+  "id": "scarlet-spider",
+  "name": "Scarlet Spider",
+  "normalImage": "scarlet-spider-icon.png",
+  "transformImage": "scarlet-spider-icon.png",
+  "maxHealthNormal": 6,
+  "maxHealthInjured": 5
+},{
+  "id": "scarlet-witch",
+  "name": "Scarlet Witch",
+  "normalImage": "scarlet-witch-icon.png",
+  "transformImage": "scarlet-witch-icon.png",
+  "maxHealthNormal": 6,
+  "maxHealthInjured": 5
+},{
+  "id": "sentinel-mk4-1",
+  "name": "Sentinel MK4 1",
+  "normalImage": "sentinel-mk4-icon.png",
+  "transformImage": "sentinel-mk4-icon.png",
+  "maxHealthNormal": 7,
+  "maxHealthInjured": 6
+},{
+  "id": "sentinel-mk4-2",
+  "name": "Sentinel MK4 2",
+  "normalImage": "sentinel-mk4-icon.png",
+  "transformImage": "sentinel-mk4-icon.png",
+  "maxHealthNormal": 7,
+  "maxHealthInjured": 6
+},{
+  "id": "sentinel-prime-mk4",
+  "name": "Sentinel Prime MK4",
+  "normalImage": "sentinel-prime-mk4-icon.png",
+  "transformImage": "sentinel-prime-mk4-icon.png",
+  "maxHealthNormal": 10,
+  "maxHealthInjured": 8
+},{
+  "id": "shadow-king",
+  "name": "Shadow King",
+  "normalImage": "shadow-king-icon.png",
+  "transformImage": "shadow-king-icon.png",
+  "maxHealthNormal": 6,
+  "maxHealthInjured": 6,
+  "powerGain": 2
+},{
+  "id": "shadowcat",
+  "name": "Shadowcat",
+  "normalImage": "shadowcat-icon.png",
+  "transformImage": "shadowcat-icon.png",
+  "maxHealthNormal": 5,
+  "maxHealthInjured": 5
+},{
+  "id": "shadowland-daredevil",
+  "name": "Shadowland Daredevil",
+  "normalImage": "shadowland-daredevil-icon.png",
+  "transformImage": "shadowland-daredevil-icon.png",
+  "maxHealthNormal": 6,
+  "maxHealthInjured": 7
+},{
+  "id": "shang-chi",
+  "name": "Shang-Chi",
+  "normalImage": "shang-chi-icon.png",
+  "transformImage": "shang-chi-icon.png",
+  "maxHealthNormal": 5,
+  "maxHealthInjured": 6
+},{
+  "id": "she-hulk",
+  "name": "She Hulk",
+  "normalImage": "she-hulk-icon.png",
+  "transformImage": "she-hulk-icon.png",
+  "maxHealthNormal": 20,
+  "maxHealthInjured": 0,
+  "powerGain": 2
+},{
+  "id": "shocker",
+  "name": "shocker",
+  "normalImage": "shocker-icon.png",
+  "transformImage": "shocker-icon.png",
+  "maxHealthNormal": 5,
+  "maxHealthInjured": 5
+},{
+  "id": "shuri",
+  "name": "Shuri",
+  "normalImage": "shuri-icon.png",
+  "transformImage": "shuri-icon.png",
+  "maxHealthNormal": 5,
+  "maxHealthInjured": 5
+},{
+  "id": "silver-sable",
+  "name": "Silver Sable",
+  "normalImage": "silver-sable-icon.png",
+  "transformImage": "silver-sable-icon.png",
+  "maxHealthNormal": 5,
+  "maxHealthInjured": 6
+},{
+  "id": "sin",
+  "name": "Sin",
+  "normalImage": "sin-icon.png",
+  "transformImage": "sin-icon.png",
+  "maxHealthNormal": 4,
+  "maxHealthInjured": 6
+},{
+  "id": "skurge-the-executioner",
+  "name": "Skurge, The Executioner",
+  "normalImage": "skurge-the-executioner-icon.png",
+  "transformImage": "skurge-the-executioner-icon.png",
+  "maxHealthNormal": 6,
+  "maxHealthInjured": 5,
+  "powerGain": 2
+},{
+  "id": "spectacular-spider-man",
+  "name": "Spectacular Spider Man",
+  "normalImage": "spectacular-spider-man-icon.png",
+  "transformImage": "spectacular-spider-man-icon.png",
+  "maxHealthNormal": 5,
+  "maxHealthInjured": 5
+},{
+  "id": "spider-man",
+  "name": "Spider Man",
+  "normalImage": "spider-man-icon.png",
+  "transformImage": "spider-man-icon.png",
+  "maxHealthNormal": 6,
+  "maxHealthInjured": 5
+},{
+  "id": "spider-man-miles-morales",
+  "name": "Spider Man Miles Morales",
+  "normalImage": "spider-man-miles-morales-icon.png",
+  "transformImage": "spider-man-miles-morales-icon.png",
+  "maxHealthNormal": 5,
+  "maxHealthInjured": 5
+},{
+  "id": "spider-woman",
+  "name": "Spider Woman",
+  "normalImage": "spider-woman-icon.png",
+  "transformImage": "spider-woman-icon.png",
+  "maxHealthNormal": 6,
+  "maxHealthInjured": 5
+},{
+  "id": "squirrel-girl",
+  "name": "Squirrel Girl",
+  "normalImage": "squirrel-girl-icon.png",
+  "transformImage": "squirrel-girl-icon.png",
+  "maxHealthNormal": 6,
+  "maxHealthInjured": 5
+},{
+  "id": "star-lord",
+  "name": "Star Lord",
+  "normalImage": "star-lord-icon.png",
+  "transformImage": "star-lord-icon.png",
+  "maxHealthNormal": 6,
+  "maxHealthInjured": 5
+},{
+  "id": "steve-rogers-captain-america",
+  "name": "Steve Rogers Captain America",
+  "normalImage": "steve-rogers-captain-america-icon.png",
+  "transformImage": "steve-rogers-captain-america-icon.png",
+  "maxHealthNormal": 6,
+  "maxHealthInjured": 5
+},{
+  "id": "storm",
+  "name": "Storm",
+  "normalImage": "storm-icon.png",
+  "transformImage": "storm-icon.png",
+  "maxHealthNormal": 5,
+  "maxHealthInjured": 5
+},{
+  "id": "sunspot",
+  "name": "Sunspot",
+  "normalImage": "sunspot-icon.png",
+  "transformImage": "sunspot-icon.png",
+  "maxHealthNormal": 6,
+  "maxHealthInjured": 6
+},{
+  "id": "supergiant",
+  "name": "Supergiant",
+  "normalImage": "supergiant-icon.png",
+  "transformImage": "supergiant-icon.png",
+  "maxHealthNormal": 5,
+  "maxHealthInjured": 5
+},{
+  "id": "taskmaster",
+  "name": "Taskmaster",
+  "normalImage": "taskmaster-icon.png",
+  "transformImage": "taskmaster-icon.png",
+  "maxHealthNormal": 6,
+  "maxHealthInjured": 5
+},{
+  "id": "thanos-the-mad-titan",
+  "name": "Thanos, The Mad Titan",
+  "normalImage": "thanos-the-mad-titan-icon.png",
+  "transformImage": "thanos-the-mad-titan-icon.png",
+  "maxHealthNormal": 8,
+  "maxHealthInjured": 9
+},{
+  "id": "the-black-widow",
+  "name": "The Black Widow",
+  "normalImage": "the-black-widow-icon.png",
+  "transformImage": "the-black-widow-icon.png",
+  "maxHealthNormal": 6,
+  "maxHealthInjured": 5
+},{
+  "id": "the-blob",
+  "name": "The Blob",
+  "normalImage": "the-blob-icon.png",
+  "transformImage": "the-blob-icon.png",
+  "maxHealthNormal": 6,
+  "maxHealthInjured": 6
+},{
+  "id": "the-immortal-hulk",
+  "name": "The Immortal Hulk",
+  "normalImage": "the-immortal-hulk-icon.png",
+  "transformImage": "the-immortal-hulk-icon.png",
+  "maxHealthNormal": 15,
+  "maxHealthInjured": 15,
+  "powerGain": 3,
+  "immortalFromDaze": true
+},{
+  "id": "mighty-thor",
+  "name": "The Mighty Thor",
+  "normalImage": "mighty-thor-icon.png",
+  "transformImage": "mighty-thor-icon.png",
+  "maxHealthNormal": 8,
+  "maxHealthInjured": 6,
+  "powerGain": 2
+},{
+  "id": "the-original-human-torch",
+  "name": "The Original Human Torch",
+  "normalImage": "the-original-human-torch-icon.png",
+  "transformImage": "the-original-human-torch-icon.png",
+  "maxHealthNormal": 5,
+  "maxHealthInjured": 5
+},{
+  "id": "the-wrecking-crew",
+  "name": "The Wrecking Crew",
+  "normalImage": "the-wrecking-crew-icon.png",
+  "transformImage": "the-wrecking-crew-icon.png",
+  "maxHealthNormal": 6,
+  "maxHealthInjured": 6,
+  "powerGain": 2
+},{
+  "id": "thor-hero-of-midgard",
+  "name": "Thor Hero of Midgard",
+  "normalImage": "thor-hero-of-midgard-icon.png",
+  "transformImage": "thor-hero-of-midgard-icon.png",
+  "maxHealthNormal": 9,
+  "maxHealthInjured": 8,
+  "powerGain": 2
+},{
+  "id": "thor-prince-of-asgard",
+  "name": "Thor Prince of Asgard",
+  "normalImage": "thor-prince-of-asgard-icon.png",
+  "transformImage": "thor-prince-of-asgard-icon.png",
+  "maxHealthNormal": 7,
+  "maxHealthInjured": 8,
+  "powerGain": 2
+},{
+  "id": "toad",
+  "name": "Toad",
+  "normalImage": "toad-icon.png",
+  "transformImage": "toad-icon.png",
+  "maxHealthNormal": 5,
+  "maxHealthInjured": 3
+},{
+  "id": "ulik",
+  "name": "Ulik",
+  "normalImage": "ulik-icon.png",
+  "transformImage": "ulik-icon.png",
+  "maxHealthNormal": 7,
+  "maxHealthInjured": 7,
+  "powerGain": 2
+},{
+  "id": "ultron",
+  "name": "Ultron",
+  "normalImage": "ultron-icon.png",
+  "transformImage": "ultron-icon.png",
+  "maxHealthNormal": 6,
+  "maxHealthInjured": 5
+},{
+  "id": "ultron-metal-tyrant",
+  "name": "Ultron Metal Tyrant",
+  "normalImage": "ultron-metal-tyrant-icon.png",
+  "transformImage": "ultron-metal-tyrant-icon.png",
+  "maxHealthNormal": 8,
+  "maxHealthInjured": 6,
+  "hasGrunts": true,
+  "showGrunts": true,
+  "grunts": [{
+    "id": "ultron-drones",
+    "name": "Ultron Drones",
+    "image": "icons/ultron-drones-icon.png",
+    "maxHealth": 3
+  }]
+},{
+  "id": "ursa-major",
+  "name": "Ursa Major",
+  "normalImage": "ursa-major-icon.png",
+  "transformImage": "ursa-major-icon.png",
+  "maxHealthNormal": 7,
+  "maxHealthInjured": 7
+},{
+  "id": "valkyrie",
+  "name": "Valkyrie",
+  "normalImage": "valkyrie-icon.png",
+  "transformImage": "valkyrie-icon.png",
+  "maxHealthNormal": 6,
+  "maxHealthInjured": 5,
+  "powerGain": 2
+},{
+  "id": "venom",
+  "name": "Venom",
+  "normalImage": "venom-icon.png",
+  "transformImage": "venom-icon.png",
+  "maxHealthNormal": 7,
+  "maxHealthInjured": 6
+},{
+  "id": "viper",
+  "name": "Viper",
+  "normalImage": "viper-icon.png",
+  "transformImage": "viper-icon.png",
+  "maxHealthNormal": 5,
+  "maxHealthInjured": 5
+},{
+  "id": "vision",
+  "name": "Vision",
+  "normalImage": "vision-icon.png",
+  "transformImage": "vision-icon.png",
+  "maxHealthNormal": 6,
+  "maxHealthInjured": 6
+},{
+  "id": "vulture",
+  "name": "Vulture",
+  "normalImage": "vulture-icon.png",
+  "transformImage": "vulture-icon.png",
+  "maxHealthNormal": 5,
+  "maxHealthInjured": 5
+},{
+  "id": "war-machine",
+  "name": "War Machine",
+  "normalImage": "war-machine-icon.png",
+  "transformImage": "war-machine-icon.png",
+  "maxHealthNormal": 5,
+  "maxHealthInjured": 5
+},{
+  "id": "warlock",
+  "name": "warlock",
+  "normalImage": "warlock-icon.png",
+  "transformImage": "warlock-icon.png",
+  "maxHealthNormal": 5,
+  "maxHealthInjured": 5
+},{
+  "id": "wasp",
+  "name": "Wasp",
+  "normalImage": "wasp-icon.png",
+  "transformImage": "wasp-icon.png",
+  "maxHealthNormal": 5,
+  "maxHealthInjured": 5,
+  "maxHealthTransformed": 5,
+  "maxHealthTransformedInjured": 5,
+  "canTransform": true
+},{
+  "id": "weapon-x",
+  "name": "Weapon X",
+  "normalImage": "weapon-x-icon.png",
+  "transformImage": "weapon-x-icon.png",
+  "maxHealthNormal": 5,
+  "maxHealthInjured": 5
+},{
+  "id": "werewolf-by-night",
+  "name": "Werewolf By Night",
+  "normalImage": "werewolf-by-night-icon.png",
+  "transformImage": "werewolf-by-night-icon.png",
+  "maxHealthNormal": 7,
+  "maxHealthInjured": 7
+},{
+  "id": "winter-soldier",
+  "name": "Winter Soldier",
+  "normalImage": "winter-soldier-icon.png",
+  "transformImage": "winter-soldier-icon.png",
+  "maxHealthNormal": 5,
+  "maxHealthInjured": 6
+},{
+  "id": "winter-soldier-operative",
+  "name": "Winter Soldier, Operative",
+  "normalImage": "winter-soldier-operative-icon.png",
+  "transformImage": "winter-soldier-operative-icon.png",
+  "maxHealthNormal": 6,
+  "maxHealthInjured": 5
+},{
+  "id": "wolverine",
+  "name": "Wolverine",
+  "normalImage": "wolverine-icon.png",
+  "transformImage": "wolverine-icon.png",
+  "maxHealthNormal": 7,
+  "maxHealthInjured": 6
+},{
+  "id": "wong",
+  "name": "Wong",
+  "normalImage": "wong-icon.png",
+  "transformImage": "wong-icon.png",
+  "maxHealthNormal": 4,
+  "maxHealthInjured": 4
+},{
+  "id": "x-23",
+  "name": "X-23",
+  "normalImage": "x-23-icon.png",
+  "transformImage": "x-23-icon.png",
+  "maxHealthNormal": 5,
+  "maxHealthInjured": 5
+},{
+  "id": "yondu",
+  "name": "Yondu",
+  "normalImage": "yondu-icon.png",
+  "transformImage": "yondu-icon.png",
+  "maxHealthNormal": 6,
+  "maxHealthInjured": 5
+}
+]
 

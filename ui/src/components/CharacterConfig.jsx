@@ -9,7 +9,7 @@ const CharacterConfig = () => {
     const gameState  = React.useContext(GameStateContext);
 
      const handlePlayerOneChange = (event, item, reason) => {
-       fetch('http://localhost:8080/character/one', {
+       fetch('/character/one', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -19,7 +19,7 @@ const CharacterConfig = () => {
      };
 
      const handlePlayerTwoChange = (event, item, reason) => {
-            fetch('http://localhost:8080/character/two', {
+            fetch('/character/two', {
                  method: 'POST',
                  headers: {
                      'Content-Type': 'application/json',

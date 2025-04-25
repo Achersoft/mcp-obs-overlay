@@ -103,6 +103,28 @@ public class CharacterStateService {
         return this.gameStateService.getGameState();
     }
 
+    public GameState playerOnePowerUp(String id) {
+        this.gameStateService.getGameState().getPlayerOneCharacters().forEach(character -> {
+            if(character.getId().equals(id)) {
+                character.setCurrentPower(character.getCurrentPower() + 1);
+                normalize(character);
+            }
+        });
+        return this.gameStateService.getGameState();
+    }
+
+    public GameState playerOnePowerDown(String id) {
+        this.gameStateService.getGameState().getPlayerOneCharacters().forEach(character -> {
+            if(character.getId().equals(id)) {
+                if (character.getCurrentPower() > 0) {
+                    character.setCurrentPower(character.getCurrentPower() - 1);
+                    normalize(character);
+                }
+            }
+        });
+        return this.gameStateService.getGameState();
+    }
+
     public GameState playerOneTakeDamageGrunts(String characterId, String gruntId) {
         this.gameStateService.getGameState().getPlayerOneCharacters().forEach(character -> {
             if(character.getId().equals(characterId)) {
@@ -128,6 +150,20 @@ public class CharacterStateService {
                             grunt.setCurrentDamage(grunt.getCurrentDamage() - 1);
                             normalize(character);
                         }
+                    }
+                });
+            }
+        });
+        return this.gameStateService.getGameState();
+    }
+
+    public GameState playerOneToggleExtractGrunts(String characterId, String gruntId) {
+        this.gameStateService.getGameState().getPlayerOneCharacters().forEach(character -> {
+            if(character.getId().equals(characterId)) {
+                character.getGrunts().forEach(grunt -> {
+                    if(grunt.getId().equals(gruntId)) {
+                        grunt.setHasExtract(!grunt.isHasExtract());
+                        normalize(character);
                     }
                 });
             }
@@ -214,6 +250,28 @@ public class CharacterStateService {
         return this.gameStateService.getGameState();
     }
 
+    public GameState playerTwoPowerUp(String id) {
+        this.gameStateService.getGameState().getPlayerTwoCharacters().forEach(character -> {
+            if(character.getId().equals(id)) {
+                character.setCurrentPower(character.getCurrentPower() + 1);
+                normalize(character);
+            }
+        });
+        return this.gameStateService.getGameState();
+    }
+
+    public GameState playerTwoPowerDown(String id) {
+        this.gameStateService.getGameState().getPlayerTwoCharacters().forEach(character -> {
+            if(character.getId().equals(id)) {
+                if (character.getCurrentPower() > 0) {
+                    character.setCurrentPower(character.getCurrentPower() - 1);
+                    normalize(character);
+                }
+            }
+        });
+        return this.gameStateService.getGameState();
+    }
+
     public GameState playerTwoTakeDamageGrunts(String characterId, String gruntId) {
         this.gameStateService.getGameState().getPlayerTwoCharacters().forEach(character -> {
             if(character.getId().equals(characterId)) {
@@ -239,6 +297,20 @@ public class CharacterStateService {
                             grunt.setCurrentDamage(grunt.getCurrentDamage() - 1);
                             normalize(character);
                         }
+                    }
+                });
+            }
+        });
+        return this.gameStateService.getGameState();
+    }
+
+    public GameState playerTwoToggleExtractGrunts(String characterId, String gruntId) {
+        this.gameStateService.getGameState().getPlayerTwoCharacters().forEach(character -> {
+            if(character.getId().equals(characterId)) {
+                character.getGrunts().forEach(grunt -> {
+                    if(grunt.getId().equals(gruntId)) {
+                        grunt.setHasExtract(!grunt.isHasExtract());
+                        normalize(character);
                     }
                 });
             }

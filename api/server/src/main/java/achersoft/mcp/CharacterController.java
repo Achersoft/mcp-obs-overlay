@@ -17,6 +17,11 @@ public class CharacterController {
         private final SimpMessagingTemplate messagingTemplate;
         private final CharacterStateService characterStateService;
 
+        @PostMapping("/cleanup")
+        public void cleanupAndPower() {
+                messagingTemplate.convertAndSend("/topic/public", characterStateService.cleanUpAndPower());
+        }
+
         @PostMapping("/one")
         public void modifyCharactersPlayerOne(@RequestBody List<Character> characters) {
                 messagingTemplate.convertAndSend("/topic/public", characterStateService.modifyCharactersPlayerOne(characters));
@@ -37,6 +42,16 @@ public class CharacterController {
                 messagingTemplate.convertAndSend("/topic/public", characterStateService.playerOneHealDamage(id));
         }
 
+        @PostMapping("/one/power/up")
+        public void playerOnePowerUp(@RequestBody String id) {
+                messagingTemplate.convertAndSend("/topic/public", characterStateService.playerOnePowerUp(id));
+        }
+
+        @PostMapping("/one/power/down")
+        public void playerOnePowerDown(@RequestBody String id) {
+                messagingTemplate.convertAndSend("/topic/public", characterStateService.playerOnePowerDown(id));
+        }
+
         @PostMapping("/one/grunt/damage")
         public void playerOneTakeDamageGrunts(@RequestBody GruntRequest gruntRequest) {
                 messagingTemplate.convertAndSend("/topic/public", characterStateService.playerOneTakeDamageGrunts(gruntRequest.getCharacterId(), gruntRequest.getGruntId()));
@@ -45,6 +60,11 @@ public class CharacterController {
         @PostMapping("/one/grunt/heal")
         public void playerOneHealDamageGrunts(@RequestBody GruntRequest gruntRequest) {
                 messagingTemplate.convertAndSend("/topic/public", characterStateService.playerOneHealDamageGrunts(gruntRequest.getCharacterId(), gruntRequest.getGruntId()));
+        }
+
+        @PostMapping("/one/grunt/extract")
+        public void playerOneToggleExtractGrunts(@RequestBody GruntRequest gruntRequest) {
+                messagingTemplate.convertAndSend("/topic/public", characterStateService.playerOneToggleExtractGrunts(gruntRequest.getCharacterId(), gruntRequest.getGruntId()));
         }
 
         @PostMapping("/one/activated")
@@ -77,6 +97,16 @@ public class CharacterController {
                 messagingTemplate.convertAndSend("/topic/public", characterStateService.playerTwoHealDamage(id));
         }
 
+        @PostMapping("/two/power/up")
+        public void playerTwoPowerUp(@RequestBody String id) {
+                messagingTemplate.convertAndSend("/topic/public", characterStateService.playerTwoPowerUp(id));
+        }
+
+        @PostMapping("/two/power/down")
+        public void playerTwoHPowerDown(@RequestBody String id) {
+                messagingTemplate.convertAndSend("/topic/public", characterStateService.playerTwoPowerDown(id));
+        }
+
         @PostMapping("/two/grunt/damage")
         public void playerTwoTakeDamageGrunts(@RequestBody GruntRequest gruntRequest) {
                 messagingTemplate.convertAndSend("/topic/public", characterStateService.playerTwoTakeDamageGrunts(gruntRequest.getCharacterId(), gruntRequest.getGruntId()));
@@ -85,6 +115,11 @@ public class CharacterController {
         @PostMapping("/two/grunt/heal")
         public void playerTwoHealDamageGrunts(@RequestBody GruntRequest gruntRequest) {
                 messagingTemplate.convertAndSend("/topic/public", characterStateService.playerTwoHealDamageGrunts(gruntRequest.getCharacterId(), gruntRequest.getGruntId()));
+        }
+
+        @PostMapping("/two/grunt/extract")
+        public void playerTwoToggleExtractGrunts(@RequestBody GruntRequest gruntRequest) {
+                messagingTemplate.convertAndSend("/topic/public", characterStateService.playerTwoToggleExtractGrunts(gruntRequest.getCharacterId(), gruntRequest.getGruntId()));
         }
 
         @PostMapping("/two/activated")

@@ -8,7 +8,7 @@ const LeftPlayerCharacter = ({boxWidth, gruntPadding, character}) => {
 
     return (
         <div style={{width: `${boxWidth}px`, justifyContent: 'right', placeItems: "right", marginRight:"5px", marginTop:"10px", float:"right"}}>
-            <div style={{ border:character.hasExtract ? "5px dotted red": "none"}}>
+            <div style={{ border:character.hasExtract ? "6px solid greenyellow": "none"}}>
                 <div style={{display:"flex", border: "4px solid black"}}>
                     <div style={{width:"75%"}}>
                         <div style={{height:"calc(50% - 5px)", background:'rgb(62,62,62)', border:character.injured ? "3px solid rgb(234, 16, 16)" : "3px solid rgb(230,220,7)", position: "relative"}}>
@@ -34,7 +34,7 @@ const LeftPlayerCharacter = ({boxWidth, gruntPadding, character}) => {
 
              {character.grunts.map((grunt) => (
                 <div style={{width:"75%", paddingTop:"5px", paddingRight:`${gruntPadding}px`,display: character.showGrunts ? "inherit" : "none"}}>
-                     <div style={{border:grunt.hasExtract ? "5px dotted red": "none"}}>
+                     <div style={{border:grunt.hasExtract ? "6px solid greenyellow": "none"}}>
                          <div style={{display:"flex", border: "4px solid black"}}>
                              <div style={{width:"85%"}}>
                                  <div style={{height:"calc(100% - 5px)", background:'rgb(62,62,62)', border:"3px solid rgb(230,220,7)", position: "relative"}}>

@@ -13,7 +13,7 @@ const RightPlayerCharacters = ({showScore}) => {
     }
 
     if (gameState.playerOneCharacters !== null) {
-        if (showScore) {
+        if (showScore === "true") {
             return (
                 <div style={{background: `${backgroundState}`, width: `${gameState.characterWidth}px`, paddingLeft: '10px', lineHeight: 1}}>
                     <div style={{height: `${gameState.characterOffset}px`}}>
@@ -34,7 +34,7 @@ const RightPlayerCharacters = ({showScore}) => {
             );
         } else {
             return (
-                <div>
+                <div style={{width: `${gameState.characterWidth}px`, paddingLeft: '10px', lineHeight: 1}}>
                     {gameState.playerTwoCharacters.map((character) => (
                         <RightPlayerCharacter key={character.name} boxWidth={gameState.characterWidth} gruntPadding={gameState.gruntPadding} character={character}></RightPlayerCharacter>
                     ))}
@@ -42,7 +42,7 @@ const RightPlayerCharacters = ({showScore}) => {
             );
         }
     } else {
-        if (showScore) {
+        if (showScore === "true") {
             return (
                 <div style={{background: `${backgroundState}`, width: `${gameState.characterWidth}px`, paddingLeft: '10px', lineHeight: 1}}>
                     <div style={{height: `${gameState.characterOffset}px`}}>

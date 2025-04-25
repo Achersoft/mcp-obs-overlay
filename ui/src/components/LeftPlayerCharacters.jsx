@@ -13,7 +13,7 @@ const LeftPlayerCharacters = ({showScore}) => {
     }
 
     if (gameState.playerOneCharacters !== null) {
-        if (showScore) {
+        if (showScore === "true") {
             return (
                 <div style={{background: `${backgroundState}`, width: `${gameState.characterWidth}px`, paddingRight: '10px', lineHeight: 1}}>
                     <div style={{height: `${gameState.characterOffset}px`}}>
@@ -42,7 +42,7 @@ const LeftPlayerCharacters = ({showScore}) => {
             );
         }
     } else {
-        if (showScore) {
+        if (showScore === "true") {
             return (
                 <div style={{background: `${backgroundState}`, width: `${gameState.characterWidth}px`, paddingRight: '10px', lineHeight: 1}}>
                     <div style={{height: `${gameState.characterOffset}px`}}>
