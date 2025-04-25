@@ -2,454 +2,1214 @@
   {
     "id": "abomination",
     "name": "Abomination",
-    "normalImage": "abomination-icon.png",
-    "transformImage": "abomination-icon.png",
+    "normalImage": "icons/abomination-icon.png",
+    "transformImage": "icons/abomination-icon.png",
     "maxHealthNormal": 7,
     "maxHealthInjured": 7,
     "powerGain": 2
   },{
   "id": "agent-venom",
   "name": "Agent Venom",
-  "normalImage": "agent-venom-icon.png",
-  "transformImage": "agent-venom-icon.png",
+  "normalImage": "icons/agent-venom-icon.png",
+  "transformImage": "icons/agent-venom-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 6
 },{
   "id": "amazing-spider-man",
   "name": "Amazing Spider Man",
-  "normalImage": "amazing-spider-man-icon.png",
-  "transformImage": "amazing-spider-man-icon.png",
+  "normalImage": "icons/amazing-spider-man-icon.png",
+  "transformImage": "icons/amazing-spider-man-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 6
 },{
   "id": "ancient-one",
   "name": "Ancient One",
-  "normalImage": "ancient-one-icon.png",
-  "transformImage": "ancient-one-icon.png",
+  "normalImage": "icons/ancient-one-icon.png",
+  "transformImage": "icons/ancient-one-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 6,
   "powerGain": 2
 },{
   "id": "angel",
   "name": "Angel",
-  "normalImage": "angel-icon.png",
-  "transformImage": "angel-icon.png",
+  "normalImage": "icons/angel-icon.png",
+  "transformImage": "icons/angel-icon.png",
   "maxHealthNormal": 5,
   "maxHealthInjured": 5
 },{
   "id": "angela",
   "name": "Angela",
-  "normalImage": "angela-icon.png",
-  "transformImage": "angela-icon.png",
+  "normalImage": "icons/angela-icon.png",
+  "transformImage": "icons/angela-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 7,
   "powerGain": 2
 },{
   "id": "ant-man",
   "name": "Ant Man",
-  "normalImage": "ant-man-icon.png",
-  "transformImage": "ant-man-icon.png",
+  "normalImage": "icons/ant-man-icon.png",
+  "transformImage": "icons/ant-man-icon.png",
   "maxHealthNormal": 5,
   "maxHealthInjured": 5
 },{
   "id": "apocalypse",
   "name": "Apocalypse",
-  "normalImage": "apocalypse-icon.png",
-  "transformImage": "apocalypse-icon.png",
+  "normalImage": "icons/apocalypse-icon.png",
+  "transformImage": "icons/apocalypse-icon.png",
   "maxHealthNormal": 7,
   "maxHealthInjured": 8
 },{
   "id": "archangel",
   "name": "Archangel",
-  "normalImage": "archangel-icon.png",
-  "transformImage": "archangel-icon.png",
+  "normalImage": "icons/archangel-icon.png",
+  "transformImage": "icons/archangel-icon.png",
   "maxHealthNormal": 5,
   "maxHealthInjured": 6
 },{
   "id": "arnim-zola",
   "name": "Arnim Zola",
-  "normalImage": "arnim-zola-icon.png",
-  "transformImage": "arnim-zola-icon.png",
+  "normalImage": "icons/arnim-zola-icon.png",
+  "transformImage": "icons/arnim-zola-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 6
 },{
   "id": "baron-helmut-zemo",
   "name": "Baron Helmut Zemo",
-  "normalImage": "baron-helmut-zemo-icon.png",
-  "transformImage": "baron-helmut-zemo-icon.png",
+  "normalImage": "icons/baron-helmut-zemo-icon.png",
+  "transformImage": "icons/baron-helmut-zemo-icon.png",
   "maxHealthNormal": 5,
   "maxHealthInjured": 6
 },{
   "id": "baron-mordo",
   "name": "Baron Mordo",
-  "normalImage": "baron-mordo-icon.png",
-  "transformImage": "baron-mordo-icon.png",
+  "normalImage": "icons/baron-mordo-icon.png",
+  "transformImage": "icons/baron-mordo-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 5
 },{
   "id": "baron-strucker",
   "name": "Baron Strucker",
-  "normalImage": "baron-strucker-icon.png",
-  "transformImage": "baron-strucker-icon.png",
+  "normalImage": "icons/baron-strucker-icon.png",
+  "transformImage": "icons/baron-strucker-icon.png",
   "maxHealthNormal": 5,
   "maxHealthInjured": 5
 },{
   "id": "baron-zemo",
   "name": "Baron Zemo",
-  "normalImage": "baron-zemo-icon.png",
-  "transformImage": "baron-zemo-icon.png",
+  "normalImage": "icons/baron-zemo-icon.png",
+  "transformImage": "icons/baron-zemo-icon.png",
   "maxHealthNormal": 5,
   "maxHealthInjured": 5
 },{
   "id": "beast",
   "name": "Beast",
-  "normalImage": "beast-icon.png",
-  "transformImage": "beast-icon.png",
+  "normalImage": "icons/beast-icon.png",
+  "transformImage": "icons/beast-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 5
 },{
   "id": "beta-ray-bill",
   "name": "Beta Ray Bill",
-  "normalImage": "beta-ray-bill-icon.png",
-  "transformImage": "beta-ray-bill-icon.png",
+  "normalImage": "icons/beta-ray-bill-icon.png",
+  "transformImage": "icons/beta-ray-bill-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 5,
   "powerGain": 2
 },{
   "id": "bishop",
   "name": "Bishop",
-  "normalImage": "bishop-icon.png",
-  "transformImage": "bishop-icon.png",
+  "normalImage": "icons/bishop-icon.png",
+  "transformImage": "icons/bishop-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 5
 },{
   "id": "black-bolt",
   "name": "Black Bolt",
-  "normalImage": "black-bolt-icon.png",
-  "transformImage": "black-bolt-icon.png",
+  "normalImage": "icons/black-bolt-icon.png",
+  "transformImage": "icons/black-bolt-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 9,
   "powerGain": 2
 },{
   "id": "black-cat",
   "name": "Black Cat",
-  "normalImage": "black-cat-icon.png",
-  "transformImage": "black-cat-icon.png",
+  "normalImage": "icons/black-cat-icon.png",
+  "transformImage": "icons/black-cat-icon.png",
   "maxHealthNormal": 5,
   "maxHealthInjured": 5
 },{
   "id": "black-dwarf",
   "name": "Black Dwarf",
-  "normalImage": "black-dwarf-icon.png",
-  "transformImage": "black-dwarf-icon.png",
+  "normalImage": "icons/black-dwarf-icon.png",
+  "transformImage": "icons/black-dwarf-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 8
 },{
   "id": "black-panther",
   "name": "Black Panther",
-  "normalImage": "black-panther-icon.png",
-  "transformImage": "black-panther-icon.png",
+  "normalImage": "icons/black-panther-icon.png",
+  "transformImage": "icons/black-panther-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 6
 },{
   "id": "black-panther-chosen-of-bast",
   "name": "Black Panther Chosen of Bast",
-  "normalImage": "black-panther-chosen-of-bast-icon.png",
-  "transformImage": "black-panther-chosen-of-bast-icon.png",
+  "normalImage": "icons/black-panther-chosen-of-bast-icon.png",
+  "transformImage": "icons/black-panther-chosen-of-bast-icon.png",
   "maxHealthNormal": 5,
   "maxHealthInjured": 5
 },{
   "id": "black-swan",
   "name": "Black Swan",
-  "normalImage": "black-swan-icon.png",
-  "transformImage": "black-swan-icon.png",
+  "normalImage": "icons/black-swan-icon.png",
+  "transformImage": "icons/black-swan-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 6
 },{
   "id": "black-widow",
   "name": "Black Widow",
-  "normalImage": "black-widow-icon.png",
-  "transformImage": "black-widow-icon.png",
+  "normalImage": "icons/black-widow-icon.png",
+  "transformImage": "icons/black-widow-icon.png",
   "maxHealthNormal": 4,
   "maxHealthInjured": 4
 },{
   "id": "black-widow-agent-of-shield",
   "name": "Black Widow Agent of Shield",
-  "normalImage": "black-widow-agent-of-shield-icon.png",
-  "transformImage": "black-widow-agent-of-shield-icon.png",
+  "normalImage": "icons/black-widow-agent-of-shield-icon.png",
+  "transformImage": "icons/black-widow-agent-of-shield-icon.png",
   "maxHealthNormal": 5,
   "maxHealthInjured": 5
 },{
   "id": "blade",
   "name": "Blade",
-  "normalImage": "blade-icon.png",
-  "transformImage": "blade-icon.png",
+  "normalImage": "icons/blade-icon.png",
+  "transformImage": "icons/blade-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 6
 },{
   "id": "bob-agent-of-hydra",
   "name": "Bob Agent of Hydra",
-  "normalImage": "bob-agent-of-hydra-icon.png",
-  "transformImage": "bob-agent-of-hydra-icon.png",
+  "normalImage": "icons/bob-agent-of-hydra-icon.png",
+  "transformImage": "icons/bob-agent-of-hydra-icon.png",
   "maxHealthNormal": 3,
   "maxHealthInjured": 3
 },{
   "id": "bullseye",
   "name": "Bullseye",
-  "normalImage": "bullseye-icon.png",
-  "transformImage": "bullseye-icon.png",
+  "normalImage": "icons/bullseye-icon.png",
+  "transformImage": "icons/bullseye-icon.png",
   "maxHealthNormal": 4,
   "maxHealthInjured": 4
 },{
   "id": "cable",
   "name": "Cable",
-  "normalImage": "cable-icon.png",
-  "transformImage": "cable-icon.png",
+  "normalImage": "icons/cable-icon.png",
+  "transformImage": "icons/cable-icon.png",
   "maxHealthNormal": 7,
   "maxHealthInjured": 7,
   "powerGain": 2
 },{
   "id": "captain-america-sam-wilson",
   "name": "Captain America Sam Wilson",
-  "normalImage": "captain-america-sam-wilson-icon.png",
-  "transformImage": "captain-america-sam-wilson-icon.png",
+  "normalImage": "icons/captain-america-sam-wilson-icon.png",
+  "transformImage": "icons/captain-america-sam-wilson-icon.png",
   "maxHealthNormal": 5,
   "maxHealthInjured": 5
 },{
   "id": "captain-america",
   "name": "Captain America",
-  "normalImage": "captain-america-icon.png",
-  "transformImage": "captain-america-icon.png",
+  "normalImage": "icons/captain-america-icon.png",
+  "transformImage": "icons/captain-america-icon.png",
   "maxHealthNormal": 5,
   "maxHealthInjured": 6
 },{
   "id": "captain-america-first-avenger",
   "name": "Captain America First Avenger",
-  "normalImage": "captain-america-first-avenger-icon.png",
-  "transformImage": "captain-america-first-avenger-icon.png",
+  "normalImage": "icons/captain-america-first-avenger-icon.png",
+  "transformImage": "icons/captain-america-first-avenger-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 5
 },{
   "id": "captain-marvel",
   "name": "Captain Marvel",
-  "normalImage": "captain-marvel-icon.png",
-  "transformImage": "captain-marvel-icon.png",
+  "normalImage": "icons/captain-marvel-icon.png",
+  "transformImage": "icons/captain-marvel-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 6
 },{
   "id": "captain-marvel-cosmic-avenger",
   "name": "Captain Marvel Cosmic Avenger",
-  "normalImage": "captain-marvel-cosmic-avenger-icon.png",
-  "transformImage": "captain-marvel-cosmic-avenger-transform-icon.png",
+  "normalImage": "icons/captain-marvel-cosmic-avenger-icon.png",
+  "transformImage": "icons/captain-marvel-cosmic-avenger-transform-icon.png",
   "maxHealthNormal": 7,
-  "maxHealthInjured": 7
+  "maxHealthInjured": 7,
+  "maxHealthTransformed": 7,
+  "maxHealthTransformedInjured": 7,
+  "canTransform": true
 },{
   "id": "carnage",
   "name": "Carnage",
-  "normalImage": "carnage-icon.png",
-  "transformImage": "carnage-icon.png",
+  "normalImage": "icons/carnage-icon.png",
+  "transformImage": "icons/carnage-icon.png",
   "maxHealthNormal": 7,
   "maxHealthInjured": 7
 },{
   "id": "cassandra-nova",
   "name": "Cassandra Nova",
-  "normalImage": "cassandra-nova-icon.png",
-  "transformImage": "cassandra-nova-icon.png",
+  "normalImage": "icons/cassandra-nova-icon.png",
+  "transformImage": "icons/cassandra-nova-icon.png",
   "maxHealthNormal": 7,
   "maxHealthInjured": 6
 },{
   "id": "clea",
   "name": "Clea",
-  "normalImage": "clea-icon.png",
-  "transformImage": "clea-icon.png",
+  "normalImage": "icons/clea-icon.png",
+  "transformImage": "icons/clea-icon.png",
   "maxHealthNormal": 5,
   "maxHealthInjured": 5
 },{
   "id": "colossus",
   "name": "Colossus",
-  "normalImage": "colossus-icon.png",
-  "transformImage": "colossus-icon.png",
+  "normalImage": "icons/colossus-icon.png",
+  "transformImage": "icons/colossus-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 7
 },{
   "id": "corvus-glaive",
   "name": "Corvus Glaive",
-  "normalImage": "corvus-glaive-icon.png",
-  "transformImage": "corvus-glaive-icon.png",
+  "normalImage": "icons/corvus-glaive-icon.png",
+  "transformImage": "icons/corvus-glaive-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 6
 },{
   "id": "cosmic-ghost-rider",
   "name": "Cosmic Ghost Rider",
-  "normalImage": "cosmic-ghost-rider-icon.png",
-  "transformImage": "cosmic-ghost-rider-icon.png",
+  "normalImage": "icons/cosmic-ghost-rider-icon.png",
+  "transformImage": "icons/cosmic-ghost-rider-icon.png",
   "maxHealthNormal": 9,
   "maxHealthInjured": 7
 },{
   "id": "crimson-dynamo",
   "name": "Crimson Dynamo",
-  "normalImage": "crimson-dynamo-icon.png",
-  "transformImage": "crimson-dynamo-icon.png",
+  "normalImage": "icons/crimson-dynamo-icon.png",
+  "transformImage": "icons/crimson-dynamo-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 6
 },{
   "id": "crossbones",
   "name": "Crossbones",
-  "normalImage": "crossbones-icon.png",
-  "transformImage": "crossbones-icon.png",
+  "normalImage": "icons/crossbones-icon.png",
+  "transformImage": "icons/crossbones-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 5
 },{
   "id": "crossbones-merciless-merc",
   "name": "Crossbones Merciless Merc",
-  "normalImage": "crossbones-merciless-merc-icon.png",
-  "transformImage": "crossbones-merciless-merc-icon.png",
+  "normalImage": "icons/crossbones-merciless-merc-icon.png",
+  "transformImage": "icons/crossbones-merciless-merc-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 5
 },{
   "id": "crystal",
   "name": "Crystal",
-  "normalImage": "crystal-icon.png",
-  "transformImage": "crystal-icon.png",
+  "normalImage": "icons/crystal-icon.png",
+  "transformImage": "icons/crystal-icon.png",
   "maxHealthNormal": 5,
   "maxHealthInjured": 5
 },{
   "id": "cyclops",
   "name": "Cyclops",
-  "normalImage": "cyclops-icon.png",
-  "transformImage": "cyclops-icon.png",
+  "normalImage": "icons/cyclops-icon.png",
+  "transformImage": "icons/cyclops-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 6
 },{
   "id": "daredevil",
   "name": "Daredevil",
-  "normalImage": "daredevil-icon.png",
-  "transformImage": "daredevil-icon.png",
+  "normalImage": "icons/daredevil-icon.png",
+  "transformImage": "icons/daredevil-icon.png",
   "maxHealthNormal": 5,
   "maxHealthInjured": 6
 },{
   "id": "darkstar",
   "name": "Darkstar",
-  "normalImage": "darkstar-icon.png",
-  "transformImage": "darkstar-icon.png",
+  "normalImage": "icons/darkstar-icon.png",
+  "transformImage": "icons/darkstar-icon.png",
   "maxHealthNormal": 5,
   "maxHealthInjured": 5
 },{
   "id": "deadpool",
   "name": "Deadpool",
-  "normalImage": "deadpool-icon.png",
-  "transformImage": "deadpool-icon.png",
+  "normalImage": "icons/deadpool-icon.png",
+  "transformImage": "icons/deadpool-icon.png",
   "maxHealthNormal": 4,
   "maxHealthInjured": 6
 },{
   "id": "doc-ock-sinister-scientist",
   "name": "Doc Ock Sinister Scientist",
-  "normalImage": "doc-ock-sinister-scientist-icon.png",
-  "transformImage": "doc-ock-sinister-scientist-icon.png",
+  "normalImage": "icons/doc-ock-sinister-scientist-icon.png",
+  "transformImage": "icons/doc-ock-sinister-scientist-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 6
 },{
   "id": "doctor-octopus",
   "name": "Doctor Octopus",
-  "normalImage": "doctor-octopus-icon.png",
-  "transformImage": "doctor-octopus-icon.png",
+  "normalImage": "icons/doctor-octopus-icon.png",
+  "transformImage": "icons/doctor-octopus-icon.png",
   "maxHealthNormal": 5,
   "maxHealthInjured": 6
 },{
   "id": "doctor-strange",
   "name": "Doctor Strange",
-  "normalImage": "doctor-strange-icon.png",
-  "transformImage": "doctor-strange-icon.png",
+  "normalImage": "icons/doctor-strange-icon.png",
+  "transformImage": "icons/doctor-strange-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 6
 },{
   "id": "doctor-strange-sorcerer-supreme",
   "name": "Doctor Strange Sorcerer Supreme",
-  "normalImage": "doctor-strange-sorcerer-supreme-icon.png",
-  "transformImage": "doctor-strange-sorcerer-supreme-icon.png",
+  "normalImage": "icons/doctor-strange-sorcerer-supreme-icon.png",
+  "transformImage": "icons/doctor-strange-sorcerer-supreme-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 6,
   "powerGain": 3
 },{
   "id": "doctor-voodoo",
   "name": "Doctor Voodoo",
-  "normalImage": "doctor-voodoo-icon.png",
-  "transformImage": "doctor-voodoo-icon.png",
+  "normalImage": "icons/doctor-voodoo-icon.png",
+  "transformImage": "icons/doctor-voodoo-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 6
 },{
   "id": "domino",
   "name": "domino",
-  "normalImage": "domino-icon.png",
-  "transformImage": "domino-icon.png",
+  "normalImage": "icons/domino-icon.png",
+  "transformImage": "icons/domino-icon.png",
   "maxHealthNormal": 5,
   "maxHealthInjured": 5
 },{
   "id": "dormammu",
   "name": "Dormammu",
-  "normalImage": "dormammu-icon.png",
-  "transformImage": "dormammu-icon.png",
+  "normalImage": "icons/dormammu-icon.png",
+  "transformImage": "icons/dormammu-icon.png",
   "maxHealthNormal": 10,
   "maxHealthInjured": 12
 },{
   "id": "dracula",
   "name": "Dracula",
-  "normalImage": "dracula-icon.png",
-  "transformImage": "dracula-icon.png",
+  "normalImage": "icons/dracula-icon.png",
+  "transformImage": "icons/dracula-icon.png",
   "maxHealthNormal": 7,
   "maxHealthInjured": 7
 },{
   "id": "drax-the-destroyer",
   "name": "Drax the Destroyer",
-  "normalImage": "drax-the-destroyer-icon.png",
-  "transformImage": "drax-the-destroyer-icon.png",
+  "normalImage": "icons/drax-the-destroyer-icon.png",
+  "transformImage": "icons/drax-the-destroyer-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 6
 },{
   "id": "ebony-maw",
   "name": "Ebony Maw",
-  "normalImage": "ebony-maw-icon.png",
-  "transformImage": "ebony-maw-icon.png",
+  "normalImage": "icons/ebony-maw-icon.png",
+  "transformImage": "icons/ebony-maw-icon.png",
   "maxHealthNormal": 7,
   "maxHealthInjured": 6,
   "powerGain": 3
 },{
   "id": "electro",
   "name": "Electro",
-  "normalImage": "electro-icon.png",
-  "transformImage": "electro-icon.png",
+  "normalImage": "icons/electro-icon.png",
+  "transformImage": "icons/electro-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 6
 },{
   "id": "elektra",
   "name": "Elektra",
-  "normalImage": "elektra-icon.png",
-  "transformImage": "elektra-icon.png",
+  "normalImage": "icons/elektra-icon.png",
+  "transformImage": "icons/elektra-icon.png",
   "maxHealthNormal": 6,
-  "maxHealthInjured": 5
+  "maxHealthInjured": 5,
+  "hasGrunts": true,
+  "showGrunts": true,
+  "grunts": [{
+    "id": "hand-ninjas",
+    "name": "Hand Ninjas",
+    "image": "icons/hand-ninjas-icon.png",
+    "maxHealth": 2
+  }]
 },{
   "id": "elsa-bloodstone",
   "name": "Elsa Bloodstone",
-  "normalImage": "elsa-bloodstone-icon.png",
-  "transformImage": "elsa-bloodstone-icon.png",
+  "normalImage": "icons/elsa-bloodstone-icon.png",
+  "transformImage": "icons/elsa-bloodstone-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 6
 },{
   "id": "emma-frost",
   "name": "Emma Frost",
-  "normalImage": "emma-frost-icon.png",
-  "transformImage": "emma-frost-transformed-icon.png",
+  "normalImage": "icons/emma-frost-icon.png",
+  "transformImage": "icons/emma-frost-transformed-icon.png",
   "maxHealthNormal": 6,
-  "maxHealthInjured": 6
+  "maxHealthInjured": 6,
+  "maxHealthTransformed": 6,
+  "maxHealthTransformedInjured": 6,
+  "canTransform": true
 },{
   "id": "enchantress",
   "name": "Enchantress",
-  "normalImage": "enchantress-icon.png",
-  "transformImage": "enchantress-icon.png",
+  "normalImage": "icons/enchantress-icon.png",
+  "transformImage": "icons/enchantress-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 5,
   "powerGain": 2
 },
+
+
+  {
+    "id": "frankensteins-monster",
+    "name": "Frankensteins Monster",
+    "normalImage": "icons/frankensteins-monster-icon.png",
+    "transformImage": "icons/frankensteins-monster-icon.png",
+    "maxHealthNormal": 7,
+    "maxHealthInjured": 7,
+    "powerGain": 1
+  },
+  {
+    "id": "gambit",
+    "name": "Gambit",
+    "normalImage": "icons/gambit-icon.png",
+    "transformImage": "icons/gambit-icon.png",
+    "maxHealthNormal": 5,
+    "maxHealthInjured": 5,
+    "powerGain": 1
+  },
+  {
+    "id": "gamora",
+    "name": "Gamora",
+    "normalImage": "icons/gamora-icon.png",
+    "transformImage": "icons/gamora-icon.png",
+    "maxHealthNormal": 6,
+    "maxHealthInjured": 6,
+    "powerGain": 1
+  },
+  {
+    "id": "ghost-rider",
+    "name": "Ghost Rider",
+    "normalImage": "icons/ghost-rider-icon.png",
+    "transformImage": "icons/ghost-rider-icon.png",
+    "maxHealthNormal": 8,
+    "maxHealthInjured": 7,
+    "powerGain": 1
+  },
+  {
+    "id": "ghost-spider",
+    "name": "Ghost Spider",
+    "normalImage": "icons/ghost-spider-icon.png",
+    "transformImage": "icons/ghost-spider-icon.png",
+    "maxHealthNormal": 5,
+    "maxHealthInjured": 5,
+    "powerGain": 1
+  },
+  {
+    "id": "gladiator",
+    "name": "Gladiator",
+    "normalImage": "icons/gladiator-icon.png",
+    "transformImage": "icons/gladiator-icon.png",
+    "maxHealthNormal": 9,
+    "maxHealthInjured": 9,
+    "powerGain": 2
+  },
+  {
+    "id": "gorgon",
+    "name": "Gorgon",
+    "normalImage": "icons/gorgon-icon.png",
+    "transformImage": "icons/gorgon-icon.png",
+    "maxHealthNormal": 6,
+    "maxHealthInjured": 5,
+    "powerGain": 1
+  },
+  {
+    "id": "green-goblin",
+    "name": "Green Goblin",
+    "normalImage": "icons/green-goblin-icon.png",
+    "transformImage": "icons/green-goblin-icon.png",
+    "maxHealthNormal": 7,
+    "maxHealthInjured": 5,
+    "powerGain": 1
+  },
+  {
+    "id": "groot",
+    "name": "Groot",
+    "normalImage": "icons/groot-icon.png",
+    "transformImage": "icons/groot-icon.png",
+    "maxHealthNormal": 7,
+    "maxHealthInjured": 7,
+    "powerGain": 1
+  },
+  {
+    "id": "gwenom",
+    "name": "Gwenom",
+    "normalImage": "icons/gwenom-icon.png",
+    "transformImage": "icons/gwenom-icon.png",
+    "maxHealthNormal": 6,
+    "maxHealthInjured": 7,
+    "powerGain": 1
+  },
+  {
+    "id": "gwenpool",
+    "name": "Gwenpool",
+    "normalImage": "icons/gwenpool-icon.png",
+    "transformImage": "icons/gwenpool-icon.png",
+    "maxHealthNormal": 6,
+    "maxHealthInjured": 6,
+    "powerGain": 1
+  },
+  {
+    "id": "hawkeye",
+    "name": "Hawkeye",
+    "normalImage": "icons/hawkeye-icon.png",
+    "transformImage": "icons/hawkeye-icon.png",
+    "maxHealthNormal": 4,
+    "maxHealthInjured": 5,
+    "powerGain": 1
+  },
+  {
+    "id": "heimdall-the-all-seeing",
+    "name": "Heimdall, The All-Seeing",
+    "normalImage": "icons/heimdall-the-all-seeing-icon.png",
+    "transformImage": "icons/heimdall-the-all-seeing-icon.png",
+    "maxHealthNormal": 6,
+    "maxHealthInjured": 5,
+    "powerGain": 2
+  },
+  {
+    "id": "hela-queen-of-hel",
+    "name": "Hela, Queen of Hel",
+    "normalImage": "icons/hela-queen-of-hel-icon.png",
+    "transformImage": "icons/hela-queen-of-hel-icon.png",
+    "maxHealthNormal": 6,
+    "maxHealthInjured": 4,
+    "powerGain": 2
+  },
+  {
+    "id": "honey-badger",
+    "name": "Honey Badger",
+    "normalImage": "icons/honey-badger-icon.png",
+    "transformImage": "icons/honey-badger-icon.png",
+    "maxHealthNormal": 5,
+    "maxHealthInjured": 4,
+    "powerGain": 1
+  },
+  {
+    "id": "hood",
+    "name": "Hood",
+    "normalImage": "icons/hood-icon.png",
+    "transformImage": "icons/hood-icon.png",
+    "maxHealthNormal": 5,
+    "maxHealthInjured": 5,
+    "powerGain": 1,
+    "maxHealthTransformed": 5,
+    "maxHealthTransformedInjured": 5,
+    "canTransform": true
+  },
+  {
+    "id": "hulk",
+    "name": "Hulk",
+    "normalImage": "icons/hulk-icon.png",
+    "transformImage": "icons/hulk-icon.png",
+    "maxHealthNormal": 20,
+    "maxHealthInjured": 0,
+    "powerGain": 3
+  },
+  {
+    "id": "hulkbuster",
+    "name": "Hulkbuster",
+    "normalImage": "icons/hulkbuster-icon.png",
+    "transformImage": "icons/hulkbuster-icon.png",
+    "maxHealthNormal": 13,
+    "maxHealthInjured": 5,
+    "powerGain": 2
+  },
+  {
+    "id": "iceman",
+    "name": "iceman",
+    "normalImage": "icons/iceman-icon.png",
+    "transformImage": "icons/iceman-icon.png",
+    "maxHealthNormal": 5,
+    "maxHealthInjured": 5,
+    "powerGain": 1
+  },
+  {
+    "id": "invincible-iron-man",
+    "name": "Invincible Iron Man",
+    "normalImage": "icons/invincible-iron-man-icon.png",
+    "transformImage": "icons/invincible-iron-man-icon.png",
+    "maxHealthNormal": 6,
+    "maxHealthInjured": 6,
+    "powerGain": 1
+  },
+  {
+    "id": "iron-fist",
+    "name": "Iron Fist",
+    "normalImage": "icons/iron-fist-icon.png",
+    "transformImage": "icons/iron-fist-icon.png",
+    "maxHealthNormal": 5,
+    "maxHealthInjured": 5,
+    "powerGain": 2
+  },
+  {
+    "id": "iron-man",
+    "name": "Iron Man",
+    "normalImage": "icons/iron-man-icon.png",
+    "transformImage": "icons/iron-man-icon.png",
+    "maxHealthNormal": 5,
+    "maxHealthInjured": 5,
+    "powerGain": 1
+  },
+  {
+    "id": "jean-grey",
+    "name": "Jean Grey",
+    "normalImage": "icons/jean-grey-icon.png",
+    "transformImage": "icons/jean-grey-icon.png",
+    "maxHealthNormal": 6,
+    "maxHealthInjured": 7,
+    "powerGain": 3
+  },
+  {
+    "id": "juggernaut",
+    "name": "Juggernaut",
+    "normalImage": "icons/juggernaut-icon.png",
+    "transformImage": "icons/juggernaut-icon.png",
+    "maxHealthNormal": 8,
+    "maxHealthInjured": 8,
+    "powerGain": 1
+  },
+  {
+    "id": "karnak",
+    "name": "karnak",
+    "normalImage": "icons/karnak-icon.png",
+    "transformImage": "icons/karnak-icon.png",
+    "maxHealthNormal": 5,
+    "maxHealthInjured": 5,
+    "powerGain": 1
+  },
+  {
+    "id": "killmonger",
+    "name": "Killmonger",
+    "normalImage": "icons/killmonger-icon.png",
+    "transformImage": "icons/killmonger-icon.png",
+    "maxHealthNormal": 6,
+    "maxHealthInjured": 5,
+    "powerGain": 1
+  },
+  {
+    "id": "killmonger-usurper",
+    "name": "Lillmonger, Usurper",
+    "normalImage": "icons/killmonger-usurper-icon.png",
+    "transformImage": "icons/killmonger-usurper-icon.png",
+    "maxHealthNormal": 6,
+    "maxHealthInjured": 6,
+    "powerGain": 1
+  },
+  {
+    "id": "king-black-bolt",
+    "name": "King Black Bolt",
+    "normalImage": "icons/king-black-bolt-icon.png",
+    "transformImage": "icons/king-black-bolt-icon.png",
+    "maxHealthNormal": 7,
+    "maxHealthInjured": 8,
+    "powerGain": 2
+  },
+  {
+    "id": "king-tchalla",
+    "name": "King T'challa",
+    "normalImage": "icons/king-tchalla-icon.png",
+    "transformImage": "icons/king-tchalla-icon.png",
+    "maxHealthNormal": 7,
+    "maxHealthInjured": 7,
+    "powerGain": 1
+  },
+  {
+    "id": "kingpin",
+    "name": "Kingpin",
+    "normalImage": "icons/kingpin-icon.png",
+    "transformImage": "icons/kingpin-icon.png",
+    "maxHealthNormal": 7,
+    "maxHealthInjured": 7,
+    "powerGain": 1
+  },
+  {
+    "id": "klaw",
+    "name": "Klaw",
+    "normalImage": "icons/klaw-icon.png",
+    "transformImage": "icons/klaw-icon.png",
+    "maxHealthNormal": 7,
+    "maxHealthInjured": 7,
+    "powerGain": 1
+  },
+  {
+    "id": "kraven-the-hunter",
+    "name": "Kraven the Hunter",
+    "normalImage": "icons/kraven-the-hunter-icon.png",
+    "transformImage": "icons/kraven-the-hunter-icon.png",
+    "maxHealthNormal": 5,
+    "maxHealthInjured": 5,
+    "powerGain": 1
+  },
+  {
+    "id": "lady-sif",
+    "name": "Lady Sif",
+    "normalImage": "icons/lady-sif-icon.png",
+    "transformImage": "icons/lady-sif-icon.png",
+    "maxHealthNormal": 6,
+    "maxHealthInjured": 6,
+    "powerGain": 2
+  },
+  {
+    "id": "lizard",
+    "name": "lizard",
+    "normalImage": "icons/lizard-icon.png",
+    "transformImage": "icons/lizard-icon.png",
+    "maxHealthNormal": 6,
+    "maxHealthInjured": 5,
+    "powerGain": 1
+  },
+  {
+    "id": "lockjaw",
+    "name": "Lockjaw",
+    "normalImage": "icons/lockjaw-icon.png",
+    "transformImage": "icons/lockjaw-icon.png",
+    "maxHealthNormal": 6,
+    "maxHealthInjured": 5,
+    "powerGain": 1
+  },
+  {
+    "id": "logan-the-wolverine",
+    "name": "Logan the Wolverine",
+    "normalImage": "icons/logan-the-wolverine-icon.png",
+    "transformImage": "icons/logan-the-wolverine-icon.png",
+    "maxHealthNormal": 6,
+    "maxHealthInjured": 6,
+    "powerGain": 1
+  },
+  {
+    "id": "loki-god-of-mischief",
+    "name": "Loki, God of Mischief",
+    "normalImage": "icons/loki-god-of-mischief-icon.png",
+    "transformImage": "icons/loki-god-of-mischief-icon.png",
+    "maxHealthNormal": 5,
+    "maxHealthInjured": 5,
+    "powerGain": 2
+  },
+  {
+    "id": "loki-prince-of-lies",
+    "name": "Loki, Prince of Lies",
+    "normalImage": "icons/loki-prince-of-lies-icon.png",
+    "transformImage": "icons/loki-prince-of-lies-icon.png",
+    "maxHealthNormal": 7,
+    "maxHealthInjured": 6,
+    "powerGain": 2
+  },
+  {
+    "id": "luke-cage",
+    "name": "Luke Cage",
+    "normalImage": "icons/luke-cage-icon.png",
+    "transformImage": "icons/luke-cage-icon.png",
+    "maxHealthNormal": 6,
+    "maxHealthInjured": 5,
+    "powerGain": 1
+  },
+  {
+    "id": "modok",
+    "name": "M.O.D.O.K.",
+    "normalImage": "icons/modok-icon.png",
+    "transformImage": "icons/modok-icon.png",
+    "maxHealthNormal": 10,
+    "maxHealthInjured": 4,
+    "powerGain": 1
+  },
+  {
+    "id": "modok-scientist-supreme",
+    "name": "M.O.D.O.K. Scientist Supreme",
+    "normalImage": "icons/modok-scientist-supreme-icon.png",
+    "transformImage": "icons/modok-scientist-supreme-icon.png",
+    "maxHealthNormal": 7,
+    "maxHealthInjured": 5,
+    "powerGain": 1
+  },
+  {
+    "id": "magik",
+    "name": "magik",
+    "normalImage": "icons/magik-icon.png",
+    "transformImage": "icons/magik-icon.png",
+    "maxHealthNormal": 5,
+    "maxHealthInjured": 5,
+    "powerGain": 1
+  },
+  {
+    "id": "magneto",
+    "name": "Magneto",
+    "normalImage": "icons/magneto-icon.png",
+    "transformImage": "icons/magneto-icon.png",
+    "maxHealthNormal": 6,
+    "maxHealthInjured": 8,
+    "powerGain": 1
+  },
+  {
+    "id": "malekith-the-accursed",
+    "name": "Malekith the Accursed",
+    "normalImage": "icons/malekith-the-accursed-icon.png",
+    "transformImage": "icons/malekith-the-accursed-icon.png",
+    "maxHealthNormal": 9,
+    "maxHealthInjured": 7,
+    "powerGain": 2
+  },
+  {
+    "id": "man-thing",
+    "name": "Man Thing",
+    "normalImage": "icons/man-thing-icon.png",
+    "transformImage": "icons/man-thing-icon.png",
+    "maxHealthNormal": 6,
+    "maxHealthInjured": 5,
+    "powerGain": 1
+  },
+  {
+    "id": "maverick",
+    "name": "Maverick",
+    "normalImage": "icons/maverick-icon.png",
+    "transformImage": "icons/maverick-icon.png",
+    "maxHealthNormal": 5,
+    "maxHealthInjured": 5,
+    "powerGain": 1
+  },
+  {
+    "id": "maximus-the-mad",
+    "name": "Maximus the Mad",
+    "normalImage": "icons/maximus-the-mad-icon.png",
+    "transformImage": "icons/maximus-the-mad-icon.png",
+    "maxHealthNormal": 6,
+    "maxHealthInjured": 6,
+    "powerGain": 1
+  },
+  {
+    "id": "medusa",
+    "name": "Medusa",
+    "normalImage": "icons/medusa-icon.png",
+    "transformImage": "icons/medusa-icon.png",
+    "maxHealthNormal": 6,
+    "maxHealthInjured": 6,
+    "powerGain": 1
+  },
+  {
+    "id": "mephisto-lord-of-temptation",
+    "name": "Mephisto Lord of Temptation",
+    "normalImage": "icons/mephisto-lord-of-temptation-icon.png",
+    "transformImage": "icons/mephisto-lord-of-temptation-icon.png",
+    "maxHealthNormal": 7,
+    "maxHealthInjured": 7,
+    "powerGain": 1
+  },
+  {
+    "id": "mister-sinister",
+    "name": "Mister Sinister",
+    "normalImage": "icons/mister-sinister-icon.png",
+    "transformImage": "icons/mister-sinister-icon.png",
+    "maxHealthNormal": 6,
+    "maxHealthInjured": 5,
+    "powerGain": 1
+  },
+  {
+    "id": "moon-knight",
+    "name": "Moon Knight",
+    "normalImage": "icons/moon-knight-icon.png",
+    "transformImage": "icons/moon-knight-icon.png",
+    "maxHealthNormal": 5,
+    "maxHealthInjured": 5,
+    "powerGain": 1
+  },
+  {
+    "id": "ms-marvel",
+    "name": "Ms Marvel",
+    "normalImage": "icons/ms-marvel-icon.png",
+    "transformImage": "icons/ms-marvel-icon.png",
+    "maxHealthNormal": 5,
+    "maxHealthInjured": 5,
+    "powerGain": 1
+  },
+  {
+    "id": "mysterio",
+    "name": "Mysterio",
+    "normalImage": "icons/mysterio-icon.png",
+    "transformImage": "icons/mysterio-icon.png",
+    "maxHealthNormal": 6,
+    "maxHealthInjured": 5,
+    "powerGain": 1
+  },
+  {
+    "id": "mystique",
+    "name": "Mystique",
+    "normalImage": "icons/mystique-icon.png",
+    "transformImage": "icons/mystique-icon.png",
+    "maxHealthNormal": 5,
+    "maxHealthInjured": 5,
+    "powerGain": 1
+  },
+  {
+    "id": "mbaku",
+    "name": "M'Baku",
+    "normalImage": "icons/mbaku-icon.png",
+    "transformImage": "icons/mbaku-icon.png",
+    "maxHealthNormal": 7,
+    "maxHealthInjured": 6,
+    "powerGain": 1
+  },
+  {
+    "id": "namor-the-submariner",
+    "name": "Namor the Submariner",
+    "normalImage": "icons/namor-the-submariner-icon.png",
+    "transformImage": "icons/namor-the-submariner-icon.png",
+    "maxHealthNormal": 7,
+    "maxHealthInjured": 7,
+    "powerGain": 2
+  },
+  {
+    "id": "nebula",
+    "name": "Nebula",
+    "normalImage": "icons/nebula-icon.png",
+    "transformImage": "icons/nebula-icon.png",
+    "maxHealthNormal": 4,
+    "maxHealthInjured": 5,
+    "powerGain": 1
+  },
+  {
+    "id": "nick-fury",
+    "name": "Nick Fury",
+    "normalImage": "icons/nick-fury-icon.png",
+    "transformImage": "icons/nick-fury-icon.png",
+    "maxHealthNormal": 6,
+    "maxHealthInjured": 5,
+    "powerGain": 1,
+    "hasGrunts": true,
+    "showGrunts": true,
+    "grunts": [{
+      "id": "shield-agents",
+      "name": "Shield Agents",
+      "image": "icons/shield-agents-icon.png",
+      "maxHealth": 2
+    }]
+  },
+  {
+    "id": "nick-fury-and-the-howling-commandos",
+    "name": "Nick Fury & the Howling Commandos",
+    "normalImage": "icons/nick-fury-and-the-howling-commandos-icon.png",
+    "transformImage": "icons/nick-fury-and-the-howling-commandos-icon.png",
+    "maxHealthNormal": 5,
+    "maxHealthInjured": 6,
+    "powerGain": 1
+  },
+  {
+    "id": "nightcrawler",
+    "name": "Nightcrawler",
+    "normalImage": "icons/nightcrawler-icon.png",
+    "transformImage": "icons/nightcrawler-icon.png",
+    "maxHealthNormal": 6,
+    "maxHealthInjured": 5,
+    "powerGain": 1
+  },
+  {
+    "id": "nova",
+    "name": "Nova",
+    "normalImage": "icons/nova-icon.png",
+    "transformImage": "icons/nova-icon.png",
+    "maxHealthNormal": 7,
+    "maxHealthInjured": 7,
+    "powerGain": 1
+  },
+  {
+    "id": "nkantu-the-living-mummy",
+    "name": "N'Kantu the Living Mummy",
+    "normalImage": "icons/nkantu-the-living-mummy-icon.png",
+    "transformImage": "icons/nkantu-the-living-mummy-icon.png",
+    "maxHealthNormal": 5,
+    "maxHealthInjured": 5,
+    "powerGain": 1
+  },
+  {
+    "id": "okoye",
+    "name": "Okoye",
+    "normalImage": "icons/okoye-icon.png",
+    "transformImage": "icons/okoye-icon.png",
+    "maxHealthNormal": 4,
+    "maxHealthInjured": 4,
+    "powerGain": 1
+  },
+  {
+    "id": "omega-red",
+    "name": "Omega Red",
+    "normalImage": "icons/omega-red-icon.png",
+    "transformImage": "icons/omega-red-icon.png",
+    "maxHealthNormal": 6,
+    "maxHealthInjured": 6,
+    "powerGain": 1
+  },
+  {
+    "id": "professor-x",
+    "name": "Professor X",
+    "normalImage": "icons/professor-x-icon.png",
+    "transformImage": "icons/professor-x-icon.png",
+    "maxHealthNormal": 6,
+    "maxHealthInjured": 5,
+    "powerGain": 1
+  },
+  {
+    "id": "proxima-midnight",
+    "name": "Proxima Midnight",
+    "normalImage": "icons/proxima-midnight-icon.png",
+    "transformImage": "icons/proxima-midnight-icon.png",
+    "maxHealthNormal": 5,
+    "maxHealthInjured": 5,
+    "powerGain": 1
+  },
+  {
+    "id": "psylocke",
+    "name": "Psylocke",
+    "normalImage": "icons/psylocke-icon.png",
+    "transformImage": "icons/psylocke-icon.png",
+    "maxHealthNormal": 6,
+    "maxHealthInjured": 5,
+    "powerGain": 1
+  },
+  {
+    "id": "punisher",
+    "name": "Punisher",
+    "normalImage": "icons/punisher-icon.png",
+    "transformImage": "icons/punisher-icon.png",
+    "maxHealthNormal": 6,
+    "maxHealthInjured": 5,
+    "powerGain": 1
+  },
+  {
+    "id": "pyro",
+    "name": "Pyro",
+    "normalImage": "icons/pyro-icon.png",
+    "transformImage": "icons/pyro-icon.png",
+    "maxHealthNormal": 5,
+    "maxHealthInjured": 5,
+    "powerGain": 1
+  },
+  {
+    "id": "quicksilver",
+    "name": "Quicksilver",
+    "normalImage": "icons/quicksilver-icon.png",
+    "transformImage": "icons/quicksilver-icon.png",
+    "maxHealthNormal": 5,
+    "maxHealthInjured": 5,
+    "powerGain": 1
+  },
+  {
+    "id": "red-guardian",
+    "name": "Red Guardian",
+    "normalImage": "icons/red-guardian-icon.png",
+    "transformImage": "icons/red-guardian-icon.png",
+    "maxHealthNormal": 5,
+    "maxHealthInjured": 6,
+    "powerGain": 1
+  },
+  {
+    "id": "red-skull",
+    "name": "Red Skull",
+    "normalImage": "icons/red-skull-icon.png",
+    "transformImage": "icons/red-skull-icon.png",
+    "maxHealthNormal": 6,
+    "maxHealthInjured": 6,
+    "powerGain": 1
+  },
+  {
+    "id": "red-skull-master-of-hydra",
+    "name": "Red Skull Master of Hydra",
+    "normalImage": "icons/red-skull-master-of-hydra-icon.png",
+    "transformImage": "icons/red-skull-master-of-hydra-icon.png",
+    "maxHealthNormal": 7,
+    "maxHealthInjured": 6,
+    "powerGain": 1,
+    "hasGrunts": true,
+    "showGrunts": true,
+    "grunts": [{
+      "id": "hydra-troopers",
+      "name": "Hydra Troopers",
+      "image": "icons/hydra-troopers-icon.png",
+      "maxHealth": 3
+    }]
+  },
+  {
+    "id": "red-skull-master-of-the-world",
+    "name": "Red Skull Master of the World",
+    "normalImage": "icons/red-skull-master-of-the-world-icon.png",
+    "transformImage": "icons/red-skull-master-of-the-world-icon.png",
+    "maxHealthNormal": 6,
+    "maxHealthInjured": 6,
+    "powerGain": 1
+  },
+  {
+    "id": "rhino",
+    "name": "Rhino",
+    "normalImage": "icons/rhino-icon.png",
+    "transformImage": "icons/rhino-icon.png",
+    "maxHealthNormal": 7,
+    "maxHealthInjured": 6,
+    "powerGain": 1
+  },
+  {
+    "id": "rocket-raccoon",
+    "name": "Rocket Raccoon",
+    "normalImage": "icons/rocket-raccoon-icon.png",
+    "transformImage": "icons/rocket-raccoon-icon.png",
+    "maxHealthNormal": 3,
+    "maxHealthInjured": 3,
+    "powerGain": 1
+  },
+  {
+    "id": "rogue",
+    "name": "Rogue",
+    "normalImage": "icons/rogue-icon.png",
+    "transformImage": "icons/rogue-icon.png",
+    "maxHealthNormal": 6,
+    "maxHealthInjured": 6,
+    "powerGain": 1
+  },
+  {
+    "id": "ronan-the-accuser",
+    "name": "Ronan the Accuser",
+    "normalImage": "icons/ronan-the-accuser-icon.png",
+    "transformImage": "icons/ronan-the-accuser-icon.png",
+    "maxHealthNormal": 7,
+    "maxHealthInjured": 7,
+    "powerGain": 1
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -459,22 +1219,22 @@
 {
   "id": "sabretooth",
   "name": "Sabretooth",
-  "normalImage": "sabretooth-icon.png",
-  "transformImage": "sabretooth-icon.png",
+  "normalImage": "icons/sabretooth-icon.png",
+  "transformImage": "icons/sabretooth-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 6
 },{
   "id": "sabretooth-apex-predator",
   "name": "Sabretooth Apex Predator",
-  "normalImage": "sabretooth-apex-predator-icon.png",
-  "transformImage": "sabretooth-apex-predator-icon.png",
+  "normalImage": "icons/sabretooth-apex-predator-icon.png",
+  "transformImage": "icons/sabretooth-apex-predator-icon.png",
   "maxHealthNormal": 7,
   "maxHealthInjured": 6
 },{
   "id": "sandman",
   "name": "Sandman",
-  "normalImage": "sandman-icon.png",
-  "transformImage": "sandman-icon.png",
+  "normalImage": "icons/sandman-icon.png",
+  "transformImage": "icons/sandman-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 7,
   "hasGrunts": true,
@@ -493,214 +1253,222 @@
 },{
   "id": "scarlet-spider",
   "name": "Scarlet Spider",
-  "normalImage": "scarlet-spider-icon.png",
-  "transformImage": "scarlet-spider-icon.png",
+  "normalImage": "icons/scarlet-spider-icon.png",
+  "transformImage": "icons/scarlet-spider-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 5
 },{
   "id": "scarlet-witch",
   "name": "Scarlet Witch",
-  "normalImage": "scarlet-witch-icon.png",
-  "transformImage": "scarlet-witch-icon.png",
+  "normalImage": "icons/scarlet-witch-icon.png",
+  "transformImage": "icons/scarlet-witch-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 5
 },{
   "id": "sentinel-mk4-1",
   "name": "Sentinel MK4 1",
-  "normalImage": "sentinel-mk4-icon.png",
-  "transformImage": "sentinel-mk4-icon.png",
+  "normalImage": "icons/sentinel-mk4-icon.png",
+  "transformImage": "icons/sentinel-mk4-icon.png",
   "maxHealthNormal": 7,
   "maxHealthInjured": 6
 },{
   "id": "sentinel-mk4-2",
   "name": "Sentinel MK4 2",
-  "normalImage": "sentinel-mk4-icon.png",
-  "transformImage": "sentinel-mk4-icon.png",
+  "normalImage": "icons/sentinel-mk4-icon.png",
+  "transformImage": "icons/sentinel-mk4-icon.png",
   "maxHealthNormal": 7,
   "maxHealthInjured": 6
 },{
   "id": "sentinel-prime-mk4",
   "name": "Sentinel Prime MK4",
-  "normalImage": "sentinel-prime-mk4-icon.png",
-  "transformImage": "sentinel-prime-mk4-icon.png",
+  "normalImage": "icons/sentinel-prime-mk4-icon.png",
+  "transformImage": "icons/sentinel-prime-mk4-icon.png",
   "maxHealthNormal": 10,
   "maxHealthInjured": 8
 },{
   "id": "shadow-king",
   "name": "Shadow King",
-  "normalImage": "shadow-king-icon.png",
-  "transformImage": "shadow-king-icon.png",
+  "normalImage": "icons/shadow-king-icon.png",
+  "transformImage": "icons/shadow-king-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 6,
   "powerGain": 2
 },{
   "id": "shadowcat",
   "name": "Shadowcat",
-  "normalImage": "shadowcat-icon.png",
-  "transformImage": "shadowcat-icon.png",
+  "normalImage": "icons/shadowcat-icon.png",
+  "transformImage": "icons/shadowcat-icon.png",
   "maxHealthNormal": 5,
   "maxHealthInjured": 5
 },{
   "id": "shadowland-daredevil",
   "name": "Shadowland Daredevil",
-  "normalImage": "shadowland-daredevil-icon.png",
-  "transformImage": "shadowland-daredevil-icon.png",
+  "normalImage": "icons/shadowland-daredevil-icon.png",
+  "transformImage": "icons/shadowland-daredevil-icon.png",
   "maxHealthNormal": 6,
-  "maxHealthInjured": 7
+  "maxHealthInjured": 7,
+  "hasGrunts": true,
+  "showGrunts": true,
+  "grunts": [{
+    "id": "hand-ninjas",
+    "name": "Hand Ninjas",
+    "image": "icons/hand-ninjas-icon.png",
+    "maxHealth": 2
+  }]
 },{
   "id": "shang-chi",
   "name": "Shang-Chi",
-  "normalImage": "shang-chi-icon.png",
-  "transformImage": "shang-chi-icon.png",
+  "normalImage": "icons/shang-chi-icon.png",
+  "transformImage": "icons/shang-chi-icon.png",
   "maxHealthNormal": 5,
   "maxHealthInjured": 6
 },{
   "id": "she-hulk",
   "name": "She Hulk",
-  "normalImage": "she-hulk-icon.png",
-  "transformImage": "she-hulk-icon.png",
+  "normalImage": "icons/she-hulk-icon.png",
+  "transformImage": "icons/she-hulk-icon.png",
   "maxHealthNormal": 20,
   "maxHealthInjured": 0,
   "powerGain": 2
 },{
   "id": "shocker",
   "name": "shocker",
-  "normalImage": "shocker-icon.png",
-  "transformImage": "shocker-icon.png",
+  "normalImage": "icons/shocker-icon.png",
+  "transformImage": "icons/shocker-icon.png",
   "maxHealthNormal": 5,
   "maxHealthInjured": 5
 },{
   "id": "shuri",
   "name": "Shuri",
-  "normalImage": "shuri-icon.png",
-  "transformImage": "shuri-icon.png",
+  "normalImage": "icons/shuri-icon.png",
+  "transformImage": "icons/shuri-icon.png",
   "maxHealthNormal": 5,
   "maxHealthInjured": 5
 },{
   "id": "silver-sable",
   "name": "Silver Sable",
-  "normalImage": "silver-sable-icon.png",
-  "transformImage": "silver-sable-icon.png",
+  "normalImage": "icons/silver-sable-icon.png",
+  "transformImage": "icons/silver-sable-icon.png",
   "maxHealthNormal": 5,
   "maxHealthInjured": 6
 },{
   "id": "sin",
   "name": "Sin",
-  "normalImage": "sin-icon.png",
-  "transformImage": "sin-icon.png",
+  "normalImage": "icons/sin-icon.png",
+  "transformImage": "icons/sin-icon.png",
   "maxHealthNormal": 4,
   "maxHealthInjured": 6
 },{
   "id": "skurge-the-executioner",
   "name": "Skurge, The Executioner",
-  "normalImage": "skurge-the-executioner-icon.png",
-  "transformImage": "skurge-the-executioner-icon.png",
+  "normalImage": "icons/skurge-the-executioner-icon.png",
+  "transformImage": "icons/skurge-the-executioner-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 5,
   "powerGain": 2
 },{
   "id": "spectacular-spider-man",
   "name": "Spectacular Spider Man",
-  "normalImage": "spectacular-spider-man-icon.png",
-  "transformImage": "spectacular-spider-man-icon.png",
+  "normalImage": "icons/spectacular-spider-man-icon.png",
+  "transformImage": "icons/spectacular-spider-man-icon.png",
   "maxHealthNormal": 5,
   "maxHealthInjured": 5
 },{
   "id": "spider-man",
   "name": "Spider Man",
-  "normalImage": "spider-man-icon.png",
-  "transformImage": "spider-man-icon.png",
+  "normalImage": "icons/spider-man-icon.png",
+  "transformImage": "icons/spider-man-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 5
 },{
   "id": "spider-man-miles-morales",
   "name": "Spider Man Miles Morales",
-  "normalImage": "spider-man-miles-morales-icon.png",
-  "transformImage": "spider-man-miles-morales-icon.png",
+  "normalImage": "icons/spider-man-miles-morales-icon.png",
+  "transformImage": "icons/spider-man-miles-morales-icon.png",
   "maxHealthNormal": 5,
   "maxHealthInjured": 5
 },{
   "id": "spider-woman",
   "name": "Spider Woman",
-  "normalImage": "spider-woman-icon.png",
-  "transformImage": "spider-woman-icon.png",
+  "normalImage": "icons/spider-woman-icon.png",
+  "transformImage": "icons/spider-woman-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 5
 },{
   "id": "squirrel-girl",
   "name": "Squirrel Girl",
-  "normalImage": "squirrel-girl-icon.png",
-  "transformImage": "squirrel-girl-icon.png",
+  "normalImage": "icons/squirrel-girl-icon.png",
+  "transformImage": "icons/squirrel-girl-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 5
 },{
   "id": "star-lord",
   "name": "Star Lord",
-  "normalImage": "star-lord-icon.png",
-  "transformImage": "star-lord-icon.png",
+  "normalImage": "icons/star-lord-icon.png",
+  "transformImage": "icons/star-lord-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 5
 },{
   "id": "steve-rogers-captain-america",
   "name": "Steve Rogers Captain America",
-  "normalImage": "steve-rogers-captain-america-icon.png",
-  "transformImage": "steve-rogers-captain-america-icon.png",
+  "normalImage": "icons/steve-rogers-captain-america-icon.png",
+  "transformImage": "icons/steve-rogers-captain-america-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 5
 },{
   "id": "storm",
   "name": "Storm",
-  "normalImage": "storm-icon.png",
-  "transformImage": "storm-icon.png",
+  "normalImage": "icons/storm-icon.png",
+  "transformImage": "icons/storm-icon.png",
   "maxHealthNormal": 5,
   "maxHealthInjured": 5
 },{
   "id": "sunspot",
   "name": "Sunspot",
-  "normalImage": "sunspot-icon.png",
-  "transformImage": "sunspot-icon.png",
+  "normalImage": "icons/sunspot-icon.png",
+  "transformImage": "icons/sunspot-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 6
 },{
   "id": "supergiant",
   "name": "Supergiant",
-  "normalImage": "supergiant-icon.png",
-  "transformImage": "supergiant-icon.png",
+  "normalImage": "icons/supergiant-icon.png",
+  "transformImage": "icons/supergiant-icon.png",
   "maxHealthNormal": 5,
   "maxHealthInjured": 5
 },{
   "id": "taskmaster",
   "name": "Taskmaster",
-  "normalImage": "taskmaster-icon.png",
-  "transformImage": "taskmaster-icon.png",
+  "normalImage": "icons/taskmaster-icon.png",
+  "transformImage": "icons/taskmaster-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 5
 },{
   "id": "thanos-the-mad-titan",
   "name": "Thanos, The Mad Titan",
-  "normalImage": "thanos-the-mad-titan-icon.png",
-  "transformImage": "thanos-the-mad-titan-icon.png",
+  "normalImage": "icons/thanos-the-mad-titan-icon.png",
+  "transformImage": "icons/thanos-the-mad-titan-icon.png",
   "maxHealthNormal": 8,
   "maxHealthInjured": 9
 },{
   "id": "the-black-widow",
   "name": "The Black Widow",
-  "normalImage": "the-black-widow-icon.png",
-  "transformImage": "the-black-widow-icon.png",
+  "normalImage": "icons/the-black-widow-icon.png",
+  "transformImage": "icons/the-black-widow-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 5
 },{
   "id": "the-blob",
   "name": "The Blob",
-  "normalImage": "the-blob-icon.png",
-  "transformImage": "the-blob-icon.png",
+  "normalImage": "icons/the-blob-icon.png",
+  "transformImage": "icons/the-blob-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 6
 },{
   "id": "the-immortal-hulk",
   "name": "The Immortal Hulk",
-  "normalImage": "the-immortal-hulk-icon.png",
-  "transformImage": "the-immortal-hulk-icon.png",
+  "normalImage": "icons/the-immortal-hulk-icon.png",
+  "transformImage": "icons/the-immortal-hulk-icon.png",
   "maxHealthNormal": 15,
   "maxHealthInjured": 15,
   "powerGain": 3,
@@ -708,69 +1476,69 @@
 },{
   "id": "mighty-thor",
   "name": "The Mighty Thor",
-  "normalImage": "mighty-thor-icon.png",
-  "transformImage": "mighty-thor-icon.png",
+  "normalImage": "icons/mighty-thor-icon.png",
+  "transformImage": "icons/mighty-thor-icon.png",
   "maxHealthNormal": 8,
   "maxHealthInjured": 6,
   "powerGain": 2
 },{
   "id": "the-original-human-torch",
   "name": "The Original Human Torch",
-  "normalImage": "the-original-human-torch-icon.png",
-  "transformImage": "the-original-human-torch-icon.png",
+  "normalImage": "icons/the-original-human-torch-icon.png",
+  "transformImage": "icons/the-original-human-torch-icon.png",
   "maxHealthNormal": 5,
   "maxHealthInjured": 5
 },{
   "id": "the-wrecking-crew",
   "name": "The Wrecking Crew",
-  "normalImage": "the-wrecking-crew-icon.png",
-  "transformImage": "the-wrecking-crew-icon.png",
+  "normalImage": "icons/the-wrecking-crew-icon.png",
+  "transformImage": "icons/the-wrecking-crew-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 6,
   "powerGain": 2
 },{
   "id": "thor-hero-of-midgard",
   "name": "Thor Hero of Midgard",
-  "normalImage": "thor-hero-of-midgard-icon.png",
-  "transformImage": "thor-hero-of-midgard-icon.png",
+  "normalImage": "icons/thor-hero-of-midgard-icon.png",
+  "transformImage": "icons/thor-hero-of-midgard-icon.png",
   "maxHealthNormal": 9,
   "maxHealthInjured": 8,
   "powerGain": 2
 },{
   "id": "thor-prince-of-asgard",
   "name": "Thor Prince of Asgard",
-  "normalImage": "thor-prince-of-asgard-icon.png",
-  "transformImage": "thor-prince-of-asgard-icon.png",
+  "normalImage": "icons/thor-prince-of-asgard-icon.png",
+  "transformImage": "icons/thor-prince-of-asgard-icon.png",
   "maxHealthNormal": 7,
   "maxHealthInjured": 8,
   "powerGain": 2
 },{
   "id": "toad",
   "name": "Toad",
-  "normalImage": "toad-icon.png",
-  "transformImage": "toad-icon.png",
+  "normalImage": "icons/toad-icon.png",
+  "transformImage": "icons/toad-icon.png",
   "maxHealthNormal": 5,
   "maxHealthInjured": 3
 },{
   "id": "ulik",
   "name": "Ulik",
-  "normalImage": "ulik-icon.png",
-  "transformImage": "ulik-icon.png",
+  "normalImage": "icons/ulik-icon.png",
+  "transformImage": "icons/ulik-icon.png",
   "maxHealthNormal": 7,
   "maxHealthInjured": 7,
   "powerGain": 2
 },{
   "id": "ultron",
   "name": "Ultron",
-  "normalImage": "ultron-icon.png",
-  "transformImage": "ultron-icon.png",
+  "normalImage": "icons/ultron-icon.png",
+  "transformImage": "icons/ultron-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 5
 },{
   "id": "ultron-metal-tyrant",
   "name": "Ultron Metal Tyrant",
-  "normalImage": "ultron-metal-tyrant-icon.png",
-  "transformImage": "ultron-metal-tyrant-icon.png",
+  "normalImage": "icons/ultron-metal-tyrant-icon.png",
+  "transformImage": "icons/ultron-metal-tyrant-icon.png",
   "maxHealthNormal": 8,
   "maxHealthInjured": 6,
   "hasGrunts": true,
@@ -784,65 +1552,65 @@
 },{
   "id": "ursa-major",
   "name": "Ursa Major",
-  "normalImage": "ursa-major-icon.png",
-  "transformImage": "ursa-major-icon.png",
+  "normalImage": "icons/ursa-major-icon.png",
+  "transformImage": "icons/ursa-major-icon.png",
   "maxHealthNormal": 7,
   "maxHealthInjured": 7
 },{
   "id": "valkyrie",
   "name": "Valkyrie",
-  "normalImage": "valkyrie-icon.png",
-  "transformImage": "valkyrie-icon.png",
+  "normalImage": "icons/valkyrie-icon.png",
+  "transformImage": "icons/valkyrie-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 5,
   "powerGain": 2
 },{
   "id": "venom",
   "name": "Venom",
-  "normalImage": "venom-icon.png",
-  "transformImage": "venom-icon.png",
+  "normalImage": "icons/venom-icon.png",
+  "transformImage": "icons/venom-icon.png",
   "maxHealthNormal": 7,
   "maxHealthInjured": 6
 },{
   "id": "viper",
   "name": "Viper",
-  "normalImage": "viper-icon.png",
-  "transformImage": "viper-icon.png",
+  "normalImage": "icons/viper-icon.png",
+  "transformImage": "icons/viper-icon.png",
   "maxHealthNormal": 5,
   "maxHealthInjured": 5
 },{
   "id": "vision",
   "name": "Vision",
-  "normalImage": "vision-icon.png",
-  "transformImage": "vision-icon.png",
+  "normalImage": "icons/vision-icon.png",
+  "transformImage": "icons/vision-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 6
 },{
   "id": "vulture",
   "name": "Vulture",
-  "normalImage": "vulture-icon.png",
-  "transformImage": "vulture-icon.png",
+  "normalImage": "icons/vulture-icon.png",
+  "transformImage": "icons/vulture-icon.png",
   "maxHealthNormal": 5,
   "maxHealthInjured": 5
 },{
   "id": "war-machine",
   "name": "War Machine",
-  "normalImage": "war-machine-icon.png",
-  "transformImage": "war-machine-icon.png",
+  "normalImage": "icons/war-machine-icon.png",
+  "transformImage": "icons/war-machine-icon.png",
   "maxHealthNormal": 5,
   "maxHealthInjured": 5
 },{
   "id": "warlock",
   "name": "warlock",
-  "normalImage": "warlock-icon.png",
-  "transformImage": "warlock-icon.png",
+  "normalImage": "icons/warlock-icon.png",
+  "transformImage": "icons/warlock-icon.png",
   "maxHealthNormal": 5,
   "maxHealthInjured": 5
 },{
   "id": "wasp",
   "name": "Wasp",
-  "normalImage": "wasp-icon.png",
-  "transformImage": "wasp-icon.png",
+  "normalImage": "icons/wasp-icon.png",
+  "transformImage": "icons/wasp-icon.png",
   "maxHealthNormal": 5,
   "maxHealthInjured": 5,
   "maxHealthTransformed": 5,
@@ -851,57 +1619,57 @@
 },{
   "id": "weapon-x",
   "name": "Weapon X",
-  "normalImage": "weapon-x-icon.png",
-  "transformImage": "weapon-x-icon.png",
+  "normalImage": "icons/weapon-x-icon.png",
+  "transformImage": "icons/weapon-x-icon.png",
   "maxHealthNormal": 5,
   "maxHealthInjured": 5
 },{
   "id": "werewolf-by-night",
   "name": "Werewolf By Night",
-  "normalImage": "werewolf-by-night-icon.png",
-  "transformImage": "werewolf-by-night-icon.png",
+  "normalImage": "icons/werewolf-by-night-icon.png",
+  "transformImage": "icons/werewolf-by-night-icon.png",
   "maxHealthNormal": 7,
   "maxHealthInjured": 7
 },{
   "id": "winter-soldier",
   "name": "Winter Soldier",
-  "normalImage": "winter-soldier-icon.png",
-  "transformImage": "winter-soldier-icon.png",
+  "normalImage": "icons/winter-soldier-icon.png",
+  "transformImage": "icons/winter-soldier-icon.png",
   "maxHealthNormal": 5,
   "maxHealthInjured": 6
 },{
   "id": "winter-soldier-operative",
   "name": "Winter Soldier, Operative",
-  "normalImage": "winter-soldier-operative-icon.png",
-  "transformImage": "winter-soldier-operative-icon.png",
+  "normalImage": "icons/winter-soldier-operative-icon.png",
+  "transformImage": "icons/winter-soldier-operative-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 5
 },{
   "id": "wolverine",
   "name": "Wolverine",
-  "normalImage": "wolverine-icon.png",
-  "transformImage": "wolverine-icon.png",
+  "normalImage": "icons/wolverine-icon.png",
+  "transformImage": "icons/wolverine-icon.png",
   "maxHealthNormal": 7,
   "maxHealthInjured": 6
 },{
   "id": "wong",
   "name": "Wong",
-  "normalImage": "wong-icon.png",
-  "transformImage": "wong-icon.png",
+  "normalImage": "icons/wong-icon.png",
+  "transformImage": "icons/wong-icon.png",
   "maxHealthNormal": 4,
   "maxHealthInjured": 4
 },{
   "id": "x-23",
   "name": "X-23",
-  "normalImage": "x-23-icon.png",
-  "transformImage": "x-23-icon.png",
+  "normalImage": "icons/x-23-icon.png",
+  "transformImage": "icons/x-23-icon.png",
   "maxHealthNormal": 5,
   "maxHealthInjured": 5
 },{
   "id": "yondu",
   "name": "Yondu",
-  "normalImage": "yondu-icon.png",
-  "transformImage": "yondu-icon.png",
+  "normalImage": "icons/yondu-icon.png",
+  "transformImage": "icons/yondu-icon.png",
   "maxHealthNormal": 6,
   "maxHealthInjured": 5
 }
