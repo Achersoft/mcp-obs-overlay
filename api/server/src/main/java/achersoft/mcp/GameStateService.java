@@ -1,7 +1,12 @@
 package achersoft.mcp;
 
+import lombok.Builder;
 import lombok.Data;
 import org.springframework.stereotype.Component;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 
 @Component
 @Data
@@ -14,7 +19,12 @@ public class GameStateService {
     }
 
     public GameState reset() {
-        this.setGameState(GameState.builder().build());
+        this.getGameState().setPlayerOne(Player.builder().build());
+        this.getGameState().setPlayerTwo(Player.builder().build());
+        this.getGameState().setRound(1);
+        this.getGameState().setThreat(0);
+        this.getGameState().setPlayerOneCharacters(new ArrayList<>());
+        this.getGameState().setPlayerTwoCharacters(new ArrayList<>());
         return gameState;
     }
 
